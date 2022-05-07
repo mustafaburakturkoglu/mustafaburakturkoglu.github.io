@@ -1,0 +1,270 @@
+/* Carousel Nav */
+.dev_res_carousel_nav {
+    text-align: right;
+    z-index: 2; 
+    right: 0;
+    top: -75px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 50%;   
+	padding: 0px; 
+}
+.dev_res_carousel_nav>* {
+  width:56px;
+  height: 56px; 
+  border-radius: 50%;
+  background-color: #434348;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  -webkit-display: inline-flex;
+  -ms-display: inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  letter-spacing: initial;
+  border: none;
+  line-height: 100%;
+}
+.dev_res_carousel_nav>*:first-child {
+  margin-right: 8px;
+}
+.dev_res_carousel_nav svg {
+  position: relative;
+} 
+.dev_res_carousel_nav .slick-prev svg {
+  right: 1px;
+}
+.dev_res_carousel_nav .slick-next svg {
+  left: 1px;
+}
+.dev_res_carousel_nav .slick-arrow {
+  cursor: pointer;
+  outline: none; 
+}
+.dev_res_carousel_nav .slick-arrow:hover {
+  background: linear-gradient(82.91deg, #3E44FE 0%, #975CFF 100%);
+  border: none; 
+} 
+
+.dev_res_carousel_nav button.slick-next.slick-arrow {
+	background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
+	box-shadow: 0px 2px 4px rgb(15 86 179 / 18%), 0px 4px 8px rgb(15 86 179 / 18%);
+	border-radius: 30px;
+	position: absolute; 
+	right: -25px; 
+}  
+.dev_res_carousel_nav button.slick-prev.slick-arrow {
+    position: absolute;  
+    left: -25px;
+    margin: 0px;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
+    box-shadow: 0px 2px 4px rgb(15 86 179 / 18%), 0px 4px 8px rgb(15 86 179 / 18%);
+}
+.dev_res_carousel_nav button.slick-arrow.slick-disabled {
+    visibility: hidden; 
+}
+
+.dev_res_carousel_nav button:hover {
+    background: linear-gradient(82.91deg, #3E44FE 0%, #975CFF 100%) !important; 
+}
+
+
+
+
+.dbio-default-heading-block.dbio-dr-heading-block {
+    text-align: left;
+} 
+.dbio-dr-heading-block p {
+	font-size: 18px;
+	color: #6A6A6D;
+	margin-bottom: 0px;
+}
+body:not(.wp-admin) .twl_carousel_container {
+  display: none;
+}
+.cb_dev_resources .dbio-dr-heading-block {
+    margin: 0px 20px; 
+}
+.slick-slide {
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding:40px 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 2;
+  outline: none;
+} 
+.dbio_gradient_bg_cover {
+    background-color: #14141A;
+    border: 1px solid #66666A;
+    border-color: #66666A;
+    z-index: 0;
+}
+article.dv_single_post.slick-slide {
+  position: relative;
+  margin-left:12px;
+  margin-right:12px;
+  padding: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 2;
+  outline: none;
+}
+article.dv_single_post .dv_main_content,
+article.dv_single_post .dv_footer {
+  position: relative;
+  z-index: 1;
+}
+section.cb_dev_resources {
+    padding-top:40px;
+	width: 100vw;
+    position: relative;
+    display: block;   
+} 
+.cb_dev_resources section.twl_carousel_container {
+    margin-top: 20px;
+}
+
+.dv_eyebrow_headline {
+    color: #35C8FF;
+    font-size: 14px;
+    line-height: 158%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.fo_excerpt {
+    color: hsla(255, 3%, 74%, 0.7);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    min-height: 8em;
+    margin-bottom: 20px;
+}
+h3.dv_main_headline {
+    color: #000;
+    margin:12px 0px 20px; 
+}
+
+.dv_single_post:hover .dv_cta {
+    opacity: 1;
+} 
+.dv_cta svg path {
+    stroke: #7f33ff;
+}
+.dv_cta {
+  outline: none;
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border-left: solid 2px;
+  border-top: solid 2px;
+  border-color: #7f33ff;
+  border-radius: 6px 0 0 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+article.dv_single_post:hover .dbio_gradient_bg_cover {
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-color: transparent;
+}
+article.dv_single_post .dv_main_content { 
+    min-height:385px;   
+}
+.dv_single_post:hover .dbio_lighter_gradient_bg_cover { 
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(102, 31, 153, 0.1) 0%, rgba(75, 31, 153, 0) 115.31%);
+}
+.dv_single_post .dbio_lighter_gradient_bg_cover {
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; 
+}
+.dv_main_content img {
+    border-radius:4px; 
+	width: 100%;
+}  
+
+p.dv_excerpt { 
+    font-family: 'avenir-next-regular',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+	color: #6A6A6D;   
+}
+h3.dv_main_headline {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height:27.6px; 
+    font-family: 'avenir-next-regular',sans-serif;
+}
+
+.dv_eyebrow_headline {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;
+    color: #30B4E6;
+}
+
+.entry-content > .cb_dev_resources ~ .cb_dev_resources {
+    background: none;
+} 
+ 
+.entry-content .cb_dev_resources:nth-child(3) {
+    background: linear-gradient(180deg, rgba(204, 133, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    /*padding-bottom: 108px;*/
+}
+
+
+@media only screen and (max-width:767px) {
+	.dbio-default-heading-block h2 {
+		font-size: 36px;
+	}
+	.dev_res_carousel_nav {
+		display: none;
+	}  
+	article.dv_single_post.slick-slide {
+        padding: 15px;
+    }
+	.cb_dev_resources .dbio-default-heading-block.dbio-dr-heading-block {
+		text-align: center;
+	}
+	.dbio-dr-heading-block p {
+		font-size: 16px;
+		line-height: 24.8px; 
+	}
+	.entry-content .cb_dev_resources:nth-child(4) {
+		padding-bottom: 92px;
+	}
+	.cb_dev_resources .dbio-default-heading-block h2 {
+		font-size: 34px !important;
+	}
+	
+}

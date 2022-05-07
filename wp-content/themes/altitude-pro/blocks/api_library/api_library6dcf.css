@@ -1,0 +1,253 @@
+:root {
+    --color-text: #14141A;
+    --color-text-gray: #B9B9BA;
+    --color-white: #fff;
+    --color-blue: #35C8FF;
+    --color-pink: #FF2E7E;
+    --color-purple: #AA33FF;
+    --color-green: #00EB81;
+}
+
+p,
+h2,
+h3 {
+    letter-spacing: 0.1em;
+}
+
+.apilibrary_container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.apilibrary_text_content_column {
+
+    max-width: 800px;
+    padding: 0 24px;
+    margin: auto;
+}
+
+.apilibrary_text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--color-text-gray);
+}
+
+
+.apicards_container {
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+/*
+#js_endlessscroll_apicards_container1, #js_endlessscroll_apicards_container2 {
+    display: flex;
+}
+*/
+.js_endlessscroll_apicards_container > div {
+    display: flex;
+}
+
+.apicard {
+    width: 240px;
+    height: 300px;
+    padding: 20px 16px;
+    margin: auto 16px;
+    border-radius: 6px;
+    flex-basis: 240px;
+    flex-shrink: 0;
+    border: 1px solid #66666A;
+    background: #14141A;
+}
+
+.apicard:hover {
+    border: none;
+    padding: 21px 17px;
+}
+
+.apicard_communications:hover {
+    border: none;
+    background: #35C8FF;      
+    background: linear-gradient(149.23deg, #35C8FF 0%, #3E44FE 104.7%);
+}
+
+.apicard_media:hover {
+    border: none;
+    background: #7D33FF;      
+    background: linear-gradient(149.43deg, #FFABCB -5.24%, #7D33FF 100%);
+}
+
+.apicard_streaming:hover {
+    border: none;
+    background: #00EB81;
+    background: linear-gradient(149.23deg, #00EB81 0%, #35C8FF 104.7%);
+}
+
+/* 
+
+apicard_category
+
+*/
+
+.apicard .apicard_category {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.apicard_streaming:hover .apicard_category, .apicard_communications:hover .apicard_category, .apicard_media:hover .apicard_category {
+    color: var(--color-text);
+}
+
+.apicard_communications .apicard_category {
+    color: #35C8FF;
+}
+
+.apicard_media .apicard_category {
+    color: #FF2E7E;
+}
+
+.apicard_streaming .apicard_category {
+    color: #00EB81;
+}
+
+/* .apicard_purple.apicard_style_accent .apicard_category {
+    color: #AA33FF;
+} */
+
+
+
+/* 
+
+apicard_icon
+
+*/
+
+.apicard .apicard_icon {
+    display: block;
+    margin-bottom: 12px; 
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+/* 
+
+apicard_name
+
+*/
+
+.apicard .apicard_name {
+    display: inline-block;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.apicard .apicard_name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -6px;
+    left: 0;
+    border-bottom: solid 2px var(--color-text);
+    width: 100%;
+}
+
+.apicard:hover .apicard_name:after {
+    border-bottom: solid 2px var(--color-text);
+}
+
+.apicard_communications .apicard_name:after {
+    border-color: #35C8FF;
+}
+
+.apicard_media .apicard_name:after {
+    border-color: #FF2E7E;
+}
+
+.apicard_streaming .apicard_name:after {
+    border-color: #00EB81;
+}
+
+/* .apicard_purple.apicard_style_accent .apicard_name:after {
+    border-color: #AA33FF;
+} */
+
+.apicard:hover .apicard_name {
+    color: #14141A;
+}
+
+.apicard .apicard_name {
+    color: #fff;
+}
+
+
+
+/* 
+
+apicard_description
+
+*/
+
+.apicard .apicard_description {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.apicard:hover .apicard_description {
+    color: var(--color-text);
+}
+
+.apicard .apicard_description {
+    color: var(--color-text-gray);
+}
+
+/* Media queries */
+
+  @media only screen and (max-width:767px) {
+    .apicard {  
+        width: 150px;
+        flex-basis: 150px;
+        margin: auto 8px;
+        padding: 14px 12px;
+    }
+    .apicard .apicard_category {
+        font-size: 9.5px;
+    }
+    .apicard .apicard_icon {
+        max-width: 48px;
+        height: 48px;
+    }
+    .apicard .apicard_name {
+        font-size: 12px;
+    }
+    .apicard .apicard_description {
+        font-size: 13px;
+    }
+    .apilibrary_container {
+        overflow: hidden;
+        margin-left: -20px;
+    }
+    .apilibrary_text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .site-inner {
+        overflow-x: hidden;
+    }
+}

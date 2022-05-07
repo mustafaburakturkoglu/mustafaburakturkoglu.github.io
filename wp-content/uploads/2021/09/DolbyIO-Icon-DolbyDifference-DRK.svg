@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.55;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st1{opacity:0.5;fill:url(#SVGID_00000119092462407799778830000007792695736275873697_);enable-background:new    ;}
+	.st2{fill:#FFFFFF;}
+</style>
+<g id="Elevated">
+	<g id="DolbyIO-Solution-Icon-DolbyDifference-DRK">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="65.0879" y1="62.1935" x2="55.2679" y2="56.2235" gradientTransform="matrix(1 0 0 -1 0 82)">
+			<stop  offset="0" style="stop-color:#35C8FF"/>
+			<stop  offset="1" style="stop-color:#3E44FE"/>
+		</linearGradient>
+		<circle class="st0" cx="60.5" cy="22.6" r="7.2"/>
+		
+			<linearGradient id="SVGID_00000098931962562847657460000013194388775101003695_" gradientUnits="userSpaceOnUse" x1="50.1305" y1="47.0791" x2="-5.4995" y2="14.9891" gradientTransform="matrix(1 0 0 -1 0 82)">
+			<stop  offset="0" style="stop-color:#FFABCB"/>
+			<stop  offset="1" style="stop-color:#7D33FF"/>
+		</linearGradient>
+		
+			<circle style="opacity:0.5;fill:url(#SVGID_00000098931962562847657460000013194388775101003695_);enable-background:new    ;" cx="24" cy="50" r="21.7"/>
+		<path class="st2" d="M69,20.2h-5.9c-11.4,0-20.6,9.2-20.6,20.6s9.2,20.6,20.6,20.6H69c0.3,0,0.6-0.3,0.6-0.6V20.8
+			C69.6,20.5,69.3,20.2,69,20.2z M68.4,60.3h-5.3c-10.7,0-19.4-8.7-19.4-19.4s8.7-19.4,19.4-19.4h5.3L68.4,60.3z"/>
+		<path class="st2" d="M16.9,20.2H11c-0.3,0-0.6,0.3-0.6,0.6l0,0v40.1c0,0.3,0.3,0.6,0.6,0.6h5.9c11.4,0,20.6-9.2,20.6-20.6
+			S28.3,20.2,16.9,20.2L16.9,20.2z M16.9,60.3h-5.3V21.4h5.3c10.7,0,19.4,8.7,19.4,19.4S27.7,60.3,16.9,60.3L16.9,60.3z"/>
+	</g>
+</g>
+</svg>

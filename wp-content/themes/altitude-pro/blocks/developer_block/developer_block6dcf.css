@@ -1,0 +1,248 @@
+:root {
+    --color-text: #14141A;
+    --color-background-black: #14141A;
+    --color-text-gray: #B9B9BA;
+    --color-white: #fff;
+    --color-blue: #35C8FF;
+    --color-pink: #FF2E7E;
+    --color-purple: #AA33FF;
+    --color-green: #00EB81;
+
+    --border-radius: 8px;
+    --border-color: 8px;
+    
+}
+
+p,
+h2,
+h3 {
+    letter-spacing: 0.1em;
+}
+
+.devblock_container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.devblock_container_columns {
+    --grid-spacing: 32px;
+    display: grid;
+    grid-row-gap: 64px;
+	grid-column-gap: var(--grid-spacing);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.devblock_container .dbio-default-button-container {
+    margin-top: 36px;
+}
+
+.devblock_text a {
+    color: var(--color-purple);
+    font-weight: 700;
+}
+
+.devblock_text a:hover {
+    color: var(--color-purple);
+}
+
+.devblock_text_content_column {
+    text-align: left;
+    max-width: 800px;
+    /* padding: 0 24px; */
+    margin: auto;
+
+}
+
+.devblock_container .dbio-default-heading-block {
+   text-align: left; 
+}
+
+.devblock_text_content_column .dbio-default-button-container {
+    text-align: left;
+}
+  
+.devblock_text p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: left;
+    letter-spacing: 0.01em;
+    color: var(--color-text-gray);
+}
+
+.devblock_text h3, .devblock_text h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 138%;
+    letter-spacing: 0.015em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+.devblock_container ul {
+    margin-top: 10px;
+}
+
+.devblock_text li {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.01em;
+    color: var(--color-text-gray);
+}
+
+
+/* 
+
+devblock_resources
+
+*/
+
+.devblock_resources {
+    margin-top: auto;
+    --grid-spacing: 32px;
+    display: grid;
+    grid-row-gap: var(--grid-spacing);
+	grid-column-gap: var(--grid-spacing);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.devblock_resource_title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.015em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF !important;
+    margin-bottom: 16px;
+}
+
+.devblock_resource_image {
+    max-width: 48px;
+    margin-bottom: 16px; 
+}
+
+.devblock_resource_link {
+    color: var(--color-purple);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+	display: flex;
+}
+.devblock_resources a.devblock_resource_link img {
+    margin-left: 7px;
+} 
+
+.devblock_resource_link:hover {
+    color: var(--color-purple);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+.devblock_logos {
+    margin-top: 56px;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    row-gap: 24px;
+    column-gap: 8px;
+}
+
+.devblock_logo {
+    max-width: 64px;
+    opacity: 0.3;
+}
+
+.devblock_container .dbio-default-heading-block .dbio-eyebrow-headline {
+    color: #35C8FF;
+}
+
+.devblock_container .dbio-default-heading-block h2 {
+    color: #fff;
+}
+
+
+.devblock_text a:hover {
+    color: #8829CC;
+}
+
+a.devblock_resource_link svg {
+    margin-left: 4px;
+    padding-top: 1.5px;
+}
+
+a.devblock_resource_link:hover {
+    color: #8829CC;
+}
+
+a.devblock_resource_link svg path {
+    stroke: #8829CC;
+}
+
+a.devblock_resource_link:hover svg path {
+    stroke: #8829CC;
+}
+
+a.devblock_resource_link .hover {
+    display: none;
+}
+
+a.devblock_resource_link .static {
+    display: inline;
+}
+
+a.devblock_resource_link:hover .static {
+    display: none;
+}
+
+a.devblock_resource_link:hover .hover {
+    display: inline;
+}
+
+svg.static {
+    min-width: 15px;
+}
+
+
+/* Media queries */
+@media only screen and (max-width:767px) {
+    .devblock_container_columns {
+        grid-template-columns: 100%;
+    }
+
+    .devblock_text p, .devblock_text li, .devblock_resource_link {
+        font-size: 15px;
+    }
+
+    .devblock_resource_title {
+        font-size: 18px;
+    }
+
+    .devblock_logos {
+        margin-top: 42px;
+    }
+
+    .devblock_logo {
+        max-width: 48px;
+    }
+
+    .devblock_container {
+        margin: 10px;
+        padding-top: 0;
+        padding-bottom: 3em;
+    }
+	
+	.devblock_logos {
+		margin-top: 56px;
+		margin-bottom: auto;
+		display: grid;
+		grid-template-columns: repeat(6, 50px);
+		row-gap: 24px;
+		column-gap: 8px;
+	}
+}

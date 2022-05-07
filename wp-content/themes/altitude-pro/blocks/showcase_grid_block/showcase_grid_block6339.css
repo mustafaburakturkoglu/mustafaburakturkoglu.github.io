@@ -1,0 +1,192 @@
+section.dbio_gird_showcase_container {
+    padding-bottom: 47px;
+}
+
+article.dbio_grid_showcase {
+   flex: 0 0 410px;
+   margin: 1em 12px;
+}
+section.dbio_gird_showcase_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+article.dbio_grid_showcase {
+    flex: 0 0 410px;
+    margin: 1em 12px;
+    border: 1px solid rgba(20, 20, 26, 0.35);
+    border-radius: 6px;
+	flex:0 1 calc(32.6% - 16px);
+}
+.fe_grid_showcase_content {
+    padding: 20px 25px;
+}
+.dbio_grid_showcase .dbio_grid_heading_block {
+    margin-bottom: 13px;
+	min-height:85px;
+} 
+.dbio_grid_heading_block h2 , .editor-styles-wrapper .dbio_grid_heading_block h2{ 
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height:28px;
+	letter-spacing: -0.005em;
+	font-feature-settings: 'tnum' on, 'lnum' on;
+	color: #2C2C31;
+}
+article.dbio_grid_showcase .dbio-fecs-logo img {
+    width: 160.05px;
+    height: 32.05px;
+    object-fit: cover; 
+}
+.fe_grid_showcase_thumbnail img {
+	width: 100%;
+	height: 236px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	object-fit: cover;
+}
+
+article.dbio_grid_showcase .dbio-second-button-container a img {
+    margin-left: 7px;
+}
+
+article.dbio_grid_showcase .dbio-second-button-container a {
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0168em;
+    color: #AA33FF;
+    margin-bottom: 6px;
+}
+article.dbio_grid_showcase .dbio-fecs-logo {
+    padding-top: 20px;
+    padding-bottom: 24px;
+} 
+
+.fe_grid_showcase_thumbnail svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 44%;
+}
+
+.fe_grid_showcase_thumbnail {
+    position: relative;
+} 
+.fancybox__container  .fancybox__thumbs {
+    display: none !important;
+}
+
+ 
+div.dolbyio_sg_content.fancybox__content {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 60px 70px;
+}
+	
+div.dolbyio_sg_content .dbio-fecs-logo {
+    padding: 0;
+}	
+div.dolbyio_sg_content.fancybox__content h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height:28px;
+    letter-spacing: -0.005em;
+    color: #2C2C31;
+	margin:10px 0px 20px; 
+} 
+div.dolbyio_sg_content iframe {
+    width:780px;
+	height: 500px;
+} 
+.dolbyio_sg_content.fancybox__content>.carousel__button.is-close {
+    top: 23px;
+    right: 24px;
+    color: #14141A;
+}  
+.fancybox__container  .fancybox__nav { 
+    display: none;
+} 
+
+.fancybox__container .fancybox__backdrop {
+    background: rgba(20, 20, 26, 1);
+	opacity: 0.5; 
+}
+
+
+article.dbio_grid_showcase .dbio-second-button-container a:hover {
+    color: #8829CC;
+}
+
+.fe_grid_btn a .static {
+   display:inline;
+}
+.fe_grid_btn a:hover .static {
+     display:none;
+}
+.fe_grid_btn a .hover {
+     display:none;
+}
+.fe_grid_btn a:hover .hover {
+     display:inline;
+}
+.dbio-second-button-container.fe_grid_btn.primary_btn_margin {
+    margin-top: 43px; 
+}
+	
+@media only screen and (max-width:1150px){
+    article.dbio_grid_showcase {
+         flex: 0 1 calc(49% - 16px);
+    }
+}   
+@media only screen and (max-width:920px){
+    article.dbio_grid_showcase {
+         flex: 0 1 calc(48.5% - 16px);
+    } 
+}    
+@media only screen and (max-width:768px){
+	.dolbyio_sg_content.fancybox__content>.carousel__button.is-close {
+		top: 12px;
+		right: 12px;
+	}
+	div.dolbyio_sg_content.fancybox__content {
+		padding:35px;
+	}
+	div.dolbyio_sg_content.fancybox__content h2 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	div.dolbyio_sg_content iframe {
+		width:100%;
+		height:380px;  
+	}
+	.dbio_grid_heading_block h2 {
+		font-size: 18px;
+		line-height:25px;
+	}
+	article.dbio_grid_showcase .dbio-fecs-logo {
+		padding-top: 0px;
+	}
+	article.dbio_grid_showcase {
+		flex:unset !important;
+		width: 100%;
+		margin: 13.5px 24px;
+	}
+	article.dbio_grid_showcase { 
+		display: block;
+	}
+	.dbio_grid_showcase .dbio_grid_heading_block {
+	   min-height:auto;
+	} 
+}
+@media only screen and (max-width:550px){
+	div.dolbyio_sg_content iframe {
+		width:100%;
+		height:340px;   
+	}
+}

@@ -1,0 +1,150 @@
+/* Light theme */
+/* Heading in CTA BLock is ALWAYS white */
+.dbio_dark.ctablock_container .dbio-default-heading-block h2,
+.dbio_light_theme.ctablock_container .dbio-default-heading-block h2 {
+  color: #fff;
+}
+
+.dbio_light_theme.ctablock_container a,
+.dbio_light_theme.ctablock_container .dbio-default-heading-block .dbio-eyebrow-headline,
+.dbio_light_theme.ctablock_container p {
+  color: #fff;
+}
+
+.dbio_light_theme.ctablock_container .dbio-second-button-container a svg path {
+  stroke: #fff;
+}
+
+.ctablock_container {
+  text-align: center;
+  padding: 75px 0 105px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ctablock_container .ctablock {
+  max-width: 864px;
+  margin: 0 auto;
+}
+
+
+
+.ctablock_container.default-bg .ctablock .dbio-eyebrow-headline {
+    color: #fff;
+}
+
+.ctablock_container.default-bg .ctablock .dbio-second-button-container a:hover {
+    color: #AA33FF;
+}
+.ctablock_container.default-bg .ctablock a svg path {
+    stroke: #fff;
+}
+
+.ctablock_container.default-bg .ctablock .dbio-second-button-container a {
+    color: #fff;
+}
+
+.ctablock_container.default-bg .ctablock .dbio-second-button-container a:hover {
+    color: #B9B9BA;
+}
+
+.ctablock_container.default-bg .ctablock .dbio-second-button-container a:hover  svg.hover path {
+    stroke: #B9B9BA !important;
+}
+
+.ctablock_container.default-bg .ctablock a:hover svg path {
+    stroke: #AA33FF;
+}
+
+.ctablock_container .dbio-second-button-container a .hover {
+    display: none;
+}
+
+.ctablock_container .dbio-second-button-container a .static {
+    display: inline;
+}
+
+.ctablock_container .dbio-second-button-container a:hover .static {
+    display: none;
+}
+
+.ctablock_container .dbio-second-button-container a:hover .hover {
+    display: inline;
+}
+
+
+.ctablock_container .dbio-second-button-container a svg.static {
+    min-width: 15px;
+}
+
+.ctablock_container .dbio-default-heading-block h2 {
+  font-size: 40px;
+  line-height: 1.33;
+  letter-spacing: -0.0075em;
+}
+
+.ctablock_container p {
+  margin: 0 auto 40px;
+}
+
+.ctablock_container .dbio_cta_row>div,
+.ctablock_container .dbio-second-button-container>* {
+  display: inline-block;
+}
+
+.ctablock_container .dbio_cta_row>div.dbio-second-button-container {
+  margin-left: 32px;
+}
+
+.ctablock a.dbio-default-button {
+    box-shadow: 0px 1px 2px 1px rgb(97 97 97 / 18%), 0px 1px 8px 1px rgb(97 97 97 / 18%);
+}
+
+.ctablock_container.default-bg .ctablock .dbio-eyebrow-headline {
+    color: #fff;
+}
+
+.ctablock_container.default-bg .ctablock a svg path {
+    stroke: #fff;
+}
+
+.ctablock_container.default-bg .ctablock a:hover svg path {
+    stroke: #AA33FF;
+}
+
+@media only screen and (max-width:900px) {
+  .ctablock_container .dbio-default-heading-block h2 {
+    font-size: 24px;
+  }
+
+  .ctablock_container .dbio-default-heading-block {
+    margin-bottom: 16px;
+  }
+
+  .ctablock_container p.dbio_regular_paragraph {
+    margin-bottom: 0;
+  }
+
+  .ctablock_container .dbio_cta_row {
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .ctablock_container {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .ctablock_container .ctablock {
+    max-width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .ctablock_container .dbio_cta_row>div.dbio-default-button-container {
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+}

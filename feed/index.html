@@ -1,0 +1,2257 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dolby.io</title>
+	<atom:link href="https://dolby.io/feed/" rel="self" type="application/rss+xml" />
+	<link>https://dolby.io</link>
+	<description>Dolby.io</description>
+	<lastBuildDate>Fri, 29 Apr 2022 00:39:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.2</generator>
+
+<image>
+	<url>https://dolby.io/wp-content/uploads/2021/07/cropped-DolbyIO-favicon-1-32x32.png</url>
+	<title>Dolby.io</title>
+	<link>https://dolby.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Create Audio Podcasts from Video By Using a Transcode API in Post-Production</title>
+		<link>https://dolby.io/blog/create-audio-podcasts-from-video-by-using-a-transcode-api-in-post-production/</link>
+		
+		<dc:creator><![CDATA[Jayson DeLancey]]></dc:creator>
+		<pubDate>Wed, 20 Apr 2022 19:20:54 +0000</pubDate>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[podcasting]]></category>
+		<category><![CDATA[transcode]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5649</guid>
+
+					<description><![CDATA[<p>Learn to produce audio-only mp3s from recorded mp4 videos as a podcasting tool use case.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/create-audio-podcasts-from-video-by-using-a-transcode-api-in-post-production/">Create Audio Podcasts from Video By Using a Transcode API in Post-Production</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>The popularity of podcasting has created new opportunities for many brands, artists, communities, and organizations to share their stories. Getting noticed with as many options as there are for listeners can be challenging. In order to maximize visibility for content discovery, creators need to be efficient in producing and delivering content where and how the audience wants to listen to it.</p>
+
+
+
+<p><a href="http://dolby.io/">Dolby.io</a>&nbsp;offers a collection of APIs that allow developers to build tools for production workflows that podcasters can use to create all the variations needed for publishing on a variety of platforms with a consistently high quality.</p>
+
+
+
+<h2 id="h-record-content-once-reuse-everywhere">Record Content Once, Reuse Everywhere</h2>
+
+
+
+<p>Among the tips &amp; tricks shared by experienced streamers and podcasters you&#8217;ll find a suggestion to create content that can be captured once and then reused and shared in multiple forms. To maximize this opportunity of create once and use everywhere, a Transcode API can help by creating variations of an asset that can be used in various ways.</p>
+
+
+
+<p>&#8211; Host a live stream on Twitch, Facebook, and/or YouTube<br>&#8211; Produce an audio-only podcast of it delivered on Apple, Spotify, and/or Stitcher<br>&#8211; Package the recording to make it available on-demand from YouTube or Vimeo<br>&#8211; Create short promo-videos or clips from the session to share on social media</p>
+
+
+
+<figure class="wp-block-pullquote"><blockquote><p><em>Pro-Tip: Record a live stream and then reuse the content for other purposes.</em></p></blockquote></figure>
+
+
+
+<p>A software developer can build an application to create all these assets with a customized workflow to achieve these outcomes efficiently using&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;APIs.</p>
+
+
+
+<p>✓ Use the Communications SDKs to host an interactive session with the host and guests<br>✓ Use a Custom Mixer Layout for views in a style similar to Open Broadcast Studio (OBS)<br>✓ Broadcast the session with RTMP to various live streaming platforms<br>✓ Use the Recording API to store and retrieve a copy</p>
+
+
+
+<p>You can find details on these first few steps from other posts such as <a href="https://dolby.io/blog/how-livestorm-uses-the-dolby-io-call-recording-api-to-capture-live-events-and-on-demand-webinars/" target="_blank" rel="noreferrer noopener">How LiveStream Uses Call Recording</a>, <a href="https://dolby.io/blog/set-up-a-live-stream-with-dolby-io-and-twitch/" target="_blank" rel="noreferrer noopener">Set up Live Stream to Twitch</a>, <a href="https://dolby.io/blog/creating-a-custom-mixer-layout-for-streaming-a-conference/" target="_blank" rel="noreferrer noopener">Creating Custom Layout for Streaming</a>, <a href="https://dolby.io/blog/deliver-video-conference-recordings-with-webhooks-and-aws-lambda/" target="_blank" rel="noreferrer noopener">Deliver Video Conference Recordings with Webhooks</a>, and <a href="https://dolby.io/blog/category/communications/" target="_blank" rel="noreferrer noopener">many more</a>.</p>
+
+
+
+<p>Once you have a recording from the interactive session, the Media APIs become powerful tools for the post-production workflow.</p>
+
+
+
+<p>✓ Use the <a href="https://dolby.io/blog/introducing-the-dolby-io-transcoding-api/" target="_blank" rel="noreferrer noopener">Transcode API</a> to extract audio-only media<br>✓ Use the <a href="https://dolby.io/products/enhance/" target="_blank" rel="noreferrer noopener">Enhance API</a> to improve the audio quality<br>✓ Use the <a href="https://dolby.io/blog/introducing-the-dolby-io-transcoding-api/" target="_blank" rel="noreferrer noopener">Transcode API</a> to create streaming formats</p>
+
+
+
+<p>Let&#8217;s look more closely at this first example.</p>
+
+
+
+<h2 id="h-how-to-create-an-audio-only-podcast-from-a-video-recording">How-to Create an Audio-Only Podcast from a Video Recording</h2>
+
+
+
+<p>Depending on the tools you use to capture a video and stream may constrain the type of file format you created. For instance, if you recorded a session with the <a href="https://docs.dolby.io/communications-apis/docs/guides-recording-mechanisms" target="_blank" rel="noreferrer noopener">Communications SDK</a> you would have an MP4 using the H.264 codec with a 1080p (1920 x 1080) at 30fps resolution. If you are using QuickTime or another tool you may end up with a MOV using the H.265 / HEVC codec. The <a href="https://dolby.io/products/transcode/" target="_blank" rel="noreferrer noopener">Transcode API</a> helps you produce the variations you need from any <a href="https://docs.dolby.io/media-apis/docs/transcode-api-guide#supported-formats" target="_blank" rel="noreferrer noopener">supported format</a> you use as an input regardless of what format you started with.</p>
+
+
+
+<p>Let&#8217;s look at an example of extracting only the audio stream from such a video file. Using the <a href="https://content-ops.atspotify.com/hc/en-us/articles/360052921671-Podcast-Delivery-Specification-1-9" target="_blank" rel="noreferrer noopener">Spotify Podcast Delivery Specification</a> as an example:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>We recommend either high bitrate (128kbps+) MP3 (only MP3 is supported for passthrough) or MP4 with AAC-LC. A maximum duration of 12 hours (roughly 2GB @ 320 Kbps) is recommended/supported.</p><cite>Spotify Podcast Delivery Specification v1.9</cite></blockquote>
+
+
+
+<h3 id="h-working-with-rest-apis">Working with REST APIs</h3>
+
+
+
+<p>The <a href="https://docs.dolby.io/media-apis/docs/introduction-to-media-processing" target="_blank" rel="noreferrer noopener">Dolby.io&nbsp;Media APIs</a> are fundamentally REST endpoints that take a JSON body payload. We&#8217;ll focus on how to construct the elements of a request rather than the mechanics of how to interface from your preferred programming language (Python, JavaScript, Java, Golang, etc.) and environment.</p>
+
+
+
+<h3 id="h-1-define-your-storage">(1) Define Your Storage</h3>
+
+
+
+<p>The Transcode API is frequently used to generate multiple output files. To avoid needing to specify your storage credentials multiple times, you define each location as a <strong>storage</strong> list. Each <em>storage</em> object has a unique <strong>id</strong> that can be used to correlate any listed <strong>inputs</strong> or <strong>outputs</strong>. For example, you could write the audio output into a different output folder from other variations you may want to create.</p>
+
+
+
+<p>You can do this with your preferred cloud storage provider such as Microsoft Azure or Google Cloud. In this example, I&#8217;ll use AWS S3, but see the <a href="https://docs.dolby.io/media-apis/docs/how-to-transcode-with-cloud-storage#transcode-with-your-own-cloud-storage" target="_blank" rel="noreferrer noopener">How-to Transcode with Your Own Cloud Storage</a> guide which explains some of these alternatives.</p>
+
+
+
+<p>I&#8217;m using a bucket I created called <strong>dolbyio</strong>. The <em>id</em> can be anything I want it to be, in this case I matched the name of the bucket itself. The <em>url</em> is smart and recognizes the <code>s3://</code> pattern. Finally for <em>auth</em>, I&#8217;m using an IAM user with permissions set to read and write to this bucket.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-json">&quot;storage&quot;: [
+    {
+        &quot;id&quot;: &quot;dolbyio-storage-id&quot;,
+        &quot;bucket&quot;: {
+            &quot;url&quot;: &quot;s3://dolbyio/tests/transcode/&quot;,
+            &quot;auth&quot;: {
+                &quot;key&quot;: &quot;...&quot;,
+                &quot;secret&quot;: &quot;...&quot;
+            }
+        }
+    }
+]</code></pre>
+
+
+
+<p>Note how the <em>url</em> contains the folder path as well so you may need more than one storage location depending on how you want separate data.</p>
+
+
+
+<h3 id="h-2-correlate-inputs-with-storage">(2) Correlate Inputs with Storage</h3>
+
+
+
+<p>With the <em>storage</em> defined, you can use the <em>id</em> there and set the corresponding <strong>ref</strong> used in defining the <strong>source</strong> (or <strong>destination</strong>) to use that storage location.  This ability to correlate <em>inputs</em> with <em>storage</em> means that you can take any number of inputs from any number of storage locations to fit the use case.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-json">&quot;inputs&quot;: [
+    {
+        &quot;source&quot;: {
+            &quot;ref&quot;: &quot;dolbyio-storage-id&quot;,
+            &quot;filename&quot;: &quot;videocast-original.mov&quot;
+        }
+    }
+]</code></pre>
+
+
+
+<p>The <strong>filename</strong> is appended to the <em>url</em> defined in the storage section. If you want to store inputs and outputs in different folder locations you will need to use more than one storage location.</p>
+
+
+
+<h3 id="h-3-define-outputs-needed">(3) Define Outputs Needed</h3>
+
+
+
+<p>The Transcode API supports different <strong>kind</strong> of files to help streamline the result you want. In our case, if we just want an MP3 with only the audio, we just need to specify that <em>kind</em> of result.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-json">&quot;outputs&quot;: [
+    {
+        &quot;destination&quot;: {
+            &quot;ref&quot;: &quot;dolbyio-storage-id&quot;,
+            &quot;filename&quot;: &quot;podcast-audio-only.mp3&quot;
+        },
+        &quot;kind&quot;: &quot;mp3&quot;,
+    }
+]</code></pre>
+
+
+
+<p>This produces an MP3 with sample rate of 44100 and bitrate of 128k by default.</p>
+
+
+
+<p>If instead we needed to provide an MP4 we could do that as well. Since MP4 is a type of container, we&#8217;ll want to specify that we want to remove the video from the original and then can provide specifics if we want a particular <strong>codec</strong> or <strong>bitrate_kb</strong> in the result.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-json">&quot;outputs&quot;: [
+    {
+        &quot;destination&quot;: {
+            &quot;ref&quot;: &quot;dolbyio-storage-id&quot;,
+            &quot;filename&quot;: &quot;podcast-audio-only.mp3&quot;
+        },
+        &quot;kind&quot;: &quot;mp3&quot;,
+    },
+    {
+        &quot;destination&quot;: {
+            &quot;ref&quot;: &quot;dolbyio-storage-id&quot;,
+            &quot;filename&quot;: &quot;podcast-audio-only.mp4&quot;
+        },
+        &quot;kind&quot;: &quot;mp4&quot;,
+        &quot;video&quot;: &quot;remove&quot;,
+        &quot;audio&quot;: [{
+            &quot;codec&quot;: &quot;aac_lc&quot;,
+            &quot;bitrate_kb&quot;: 320
+        }]
+    }
+]</code></pre>
+
+
+
+<p>The defaults happen to be <code>aac_lc</code> and <code>320 kbps</code> but this demonstrates some of the flexibility. To package this up you&#8217;ll make a <code>POST&nbsp;https://api.dolby.com/media/transcode</code> request with this combined JSON as the body. </p>
+
+
+
+<p>The <a href="https://docs.dolby.io/media-apis/docs/transcoding-media" target="_blank" rel="noreferrer noopener">Getting Started with Transcoding Media</a> guide walks through the steps of formulating that request with sample code for some popular environments such as Python, JavaScript, or even <code>cURL</code> from a command line shell.</p>
+
+
+
+<h2 id="h-building-podcast-applications">Building Podcast Applications</h2>
+
+
+
+<p><a href="http://dolby.io/">Dolby.io</a>&nbsp;provides several API that can help build applications that support podcasting use cases. If you are looking to create a webapp, a mobile app, or a post-production media workflow the Transcode API provides a way to automate generating variations of your user-generated media. In this project we demonstrated how to create an audio-only variation of a video file, but we&#8217;ll revisit this topic again to discuss other ways of improving the content creation experience for your users.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/create-audio-podcasts-from-video-by-using-a-transcode-api-in-post-production/">Create Audio Podcasts from Video By Using a Transcode API in Post-Production</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Dolby.io Streaming API with Millicast at SXSW 2022</title>
+		<link>https://dolby.io/blog/dolby-io-streaming-api-with-millicast-at-sxsw-2022/</link>
+		
+		<dc:creator><![CDATA[Griffin Solot-Kehl]]></dc:creator>
+		<pubDate>Fri, 15 Apr 2022 17:00:00 +0000</pubDate>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Streaming]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[gaming]]></category>
+		<category><![CDATA[streaming]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5622</guid>
+
+					<description><![CDATA[<p>Dolby.io showed off our new Streaming API at South by Southwest 2022 using our acquisition of Millicast. Check out the demos of the platform even after the show.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/dolby-io-streaming-api-with-millicast-at-sxsw-2022/">Dolby.io Streaming API with Millicast at SXSW 2022</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Millicast, which&nbsp;<a href="https://news.dolby.com/en-WW/209521-dolby-acquires-millicast-the-real-time-ultra-low-delay-video-streaming-platform">was recently acquired by&nbsp;</a><a href="http://dolby.io/">Dolby.io</a>, took center stage at SXSW 2022. At our booth, we were able to showcase&nbsp;just how game changing this technology was to hundreds of visitors, drawing them in with our demos that demonstrated in real time just how low the latency between the direct video feed and the web stream were in person.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="767" src="https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-1024x767.jpg" alt="" class="wp-image-5627" srcset="https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-1024x767.jpg 1024w, https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-300x225.jpg 300w, https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-768x575.jpg 768w, https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-1536x1150.jpg 1536w, https://dolby.io/wp-content/uploads/2022/04/Image-from-iOS-2048x1534.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h2 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-ExperiencetheDemoYourself">Experience the Demo Yourself</h2>
+
+
+
+<p>Just because SXSW is over doesn&#8217;t mean you don&#8217;t have the opportunity to experience the Millicast demo yourself! You can get started by visiting this URL:&nbsp;<a href="https://demo.millicast.com/">https://demo.millicast.com/</a></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="535" src="https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-1024x535.png" alt="" class="wp-image-5628" srcset="https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-1024x535.png 1024w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-300x157.png 300w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-768x401.png 768w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-1536x803.png 1536w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-30_18-37-22-2048x1070.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>The demo will place you into the above screen with some basic instructions. Once you have configured your audio and video input devices properly, click the green &#8220;Start&#8221; button to begin broadcasting. Once active, it should display a URL to copy in this format:&nbsp;<code>https://viewer.millicast.com/v2?streamId=XXXXXX/demo_XX_XXXXXXXXXXXXX</code>.</p>
+
+
+
+<p>While you could paste this link directly into a new browser window, we find that it is most impressive to view the stream on another device. To do this, you can either share the URL with the cloud sharing service of your choice, or you can copy that URL into a&nbsp;<a href="https://www.qr-code-generator.com/">QR code generator</a>&nbsp;to easily read with your phone.</p>
+
+
+
+<figure class="wp-block-video"><video controls src="https://dolby.io/wp-content/uploads/2022/04/millicastdemo.mov"></video></figure>
+
+
+
+<p>The above&nbsp;video&nbsp;shows the live camera feed on the left half of the screen with the Millicast broadcast on the right. Notice how short the delay is between the two streams. This is the power of Millicast.</p>
+
+
+
+<h2 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-ExpandingFurther">Expanding Further</h2>
+
+
+
+<h3 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-SignUpforaMillicastAccount">Sign Up for a Millicast Account</h3>
+
+
+
+<p>In order to access the Millicast demo, you first need to&nbsp;<a href="https://dash.millicast.com/#/signup?planId=28">sign up for a free account</a>.&nbsp;This will enable you to immediately start using Millicast for your own applications, including browser based broadcasting like in the demo, but also some other applications.</p>
+
+
+
+<h3 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-OBSWebRTC">OBS WebRTC</h3>
+
+
+
+<p><a href="https://obsproject.com/">Open Broadcaster Studio (OBS)</a>&nbsp;has become a popular tool in live broadcasting. We can integrate the low latency prowess of Millicast within OBS itself to create extremely responsive live stream. To do this, we begin by downloading a fork of OBS Studio,&nbsp;<a href="https://github.com/CoSMoSoftware/OBS-studio-webrtc/releases">OBS-WebRTC</a>. This fork allows us to use WebRTC based streaming that will specifically work with Millicast&#8217;s underlying technology. It works the same as the mainline OBS application, though we do need to set it up first. Under&nbsp;<strong>Settings&nbsp;→ Stream</strong>, we need to input our credentials for the stream name and the publishing token.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="336" src="https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28-1024x336.png" alt="" class="wp-image-5632" srcset="https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28-1024x336.png 1024w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28-300x99.png 300w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28-768x252.png 768w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28-1536x505.png 1536w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-46-28.png 1948w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>We can find these on the&nbsp;<a href="https://dash.millicast.com/#/tokens">Millicast Live Broadcast Dashboard</a>&nbsp;by adding or selecting an existing Stream Token, navigating to the&nbsp;<strong>API</strong>&nbsp;tab, and copying the values.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="992" height="532" src="https://dolby.io/wp-content/uploads/2022/04/Screen-Shot-2022-03-31-at-3.51.41-PM.png" alt="" class="wp-image-5633" srcset="https://dolby.io/wp-content/uploads/2022/04/Screen-Shot-2022-03-31-at-3.51.41-PM.png 992w, https://dolby.io/wp-content/uploads/2022/04/Screen-Shot-2022-03-31-at-3.51.41-PM-300x161.png 300w, https://dolby.io/wp-content/uploads/2022/04/Screen-Shot-2022-03-31-at-3.51.41-PM-768x412.png 768w" sizes="(max-width: 992px) 100vw, 992px" /></figure>
+
+
+
+<p>With the credentials saved into OBS-WebRTC, we can click&nbsp;<strong>Start Streaming</strong>&nbsp;in OBS, which will begin our broadcast. Millicast provides many different endpoints to access this stream, though the easiest one to access for testing purposes is the&nbsp;<strong>HOSTED PLAYER PATH</strong>&nbsp;located in the same tab as our auth credentials.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="684" height="130" src="https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-57-37.png" alt="" class="wp-image-5634" srcset="https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-57-37.png 684w, https://dolby.io/wp-content/uploads/2022/04/image2022-3-31_15-57-37-300x57.png 300w" sizes="(max-width: 684px) 100vw, 684px" /></figure>
+
+
+
+<p>Once you visit this page in another browser tab, you should see the stream just like in the demo!</p>
+
+
+
+<figure class="wp-block-video"><video controls src="https://dolby.io/wp-content/uploads/2022/04/millicastobs.mov"></video></figure>
+
+
+
+<p>To learn&nbsp;more, see&nbsp;<a href="https://docs.millicast.com/docs/using-obs-with-millicast">the documentation on how to use OBS with Millicast</a>.</p>
+
+
+
+<h2 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-IndustryApplications">Industry Applications</h2>
+
+
+
+<p>Millicast has applications for a large variety of industries. We have seen success from people in areas such as:</p>
+
+
+
+<ul><li>Education</li><li>Medical Practice</li><li>News Broadcasting</li><li>Gaming</li><li>AR &amp; VR</li><li>Social Media</li><li>Music Festivals</li><li>Remote Development</li><li>Auction Houses</li><li>Ecommerce</li><li>Virtual Tours</li><li>Health and Fitness</li><li>Pair Programming</li></ul>
+
+
+
+<p>Watch this video to see how Millicast can be used in real world situations:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Millicast: The Future of Interactive Streaming" width="500" height="281" src="https://www.youtube.com/embed/FGwg6XtVP8E?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<h2 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-VideoGames">Video Games</h2>
+
+
+
+<p>We also featured Millicast&#8217;s integration into Unreal Engine, which helps game developers access the game engine remotely, yet still super responsively. The below video shows off how this works, including demonstrating streaming from Spain to the West Coast USA in under 200ms of latency.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Stream interactive video to &amp; from Unreal Engine with Millicast" width="500" height="281" src="https://www.youtube.com/embed/oUJpYzb5aAQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p>To read more, see the official documentation on the&nbsp;<a href="https://docs.millicast.com/docs/millicast-player-plugin">Millicast Player Plugin for Unreal Engine 4</a>.</p>
+
+
+
+<h2 id="Dolby.ioStreamingAPIwithMillicastatSXSW2022-NextSteps">Next Steps</h2>
+
+
+
+<p>Millicast adds a plethora of different capabilities to the Dolby.io API suite, and this is only the tip of the iceberg. Millicast also works with&nbsp;<a href="https://docs.millicast.com/docs/using-obs-with-millicast">RTMP streams, Simulcasting, GoPro, DJI Drones, Elgato Stream Deck, and much much more</a>!</p>
+
+
+
+<p><a href="https://dash.millicast.com/#/signup?planId=28">Sign up for a free account today</a>&nbsp;and show us what you can build on Dolby.io with Millicast!</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/dolby-io-streaming-api-with-millicast-at-sxsw-2022/">Dolby.io Streaming API with Millicast at SXSW 2022</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://dolby.io/wp-content/uploads/2022/04/millicastdemo.mov" length="6764830" type="video/quicktime" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/millicastobs.mov" length="10030749" type="video/quicktime" />
+
+			</item>
+		<item>
+		<title>Using Kotlin to Create Your First Audio Voice Call on Android with Dolby.io</title>
+		<link>https://dolby.io/blog/using-kotlin-to-create-your-first-audio-voice-call-on-android-with-dolby-io/</link>
+		
+		<dc:creator><![CDATA[Denize Ignacio]]></dc:creator>
+		<pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+				<category><![CDATA[Communications]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[kotlin]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5509</guid>
+
+					<description><![CDATA[<p>Learn how to use Kotlin to build an Android application that supports Voice Calls.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/using-kotlin-to-create-your-first-audio-voice-call-on-android-with-dolby-io/">Using Kotlin to Create Your First Audio Voice Call on Android with Dolby.io</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><a href="http://dolby.io/">Dolby.io</a> provides Communication APIs that allow developers to create their own types of conference calling applications in a self-serve way. Here at Dolby.io, we provide an Android SDK that makes it as simple as possible to set up in your own application. In this blog post, you&#8217;ll learn how to create an audio-only conference call using <a href="http://dolby.io/">Dolby.io</a> and Android Studio.</p>
+
+
+
+<h1 id="h-pre-requisites">Pre-requisites</h1>
+
+
+
+<ul><li>Have latest version of&nbsp;<a href="https://developer.android.com/studio/?gclid=CjwKCAjwloCSBhAeEiwA3hVo_UvgkMOrFN1wcJIwPwV5DbqRME02lKvRFUv51eBwiNVs5PNiFj_CFBoCLE8QAvD_BwE&amp;gclsrc=aw.ds">Android Studio</a>&nbsp;installed</li><li>Physical Android device or emulator</li><li>A&nbsp;<a href="https://auth.dolby.io/realms/Dolby.io/protocol/openid-connect/registrations?client_id=dolby-io-website&amp;redirect_uri=https%3A%2F%2Fdashboard.dolby.io%2Fenrollment&amp;state=3b170c11-e569-455b-9dd7-0d4b99632999&amp;response_mode=fragment&amp;response_type=code&amp;scope=openid&amp;nonce=640a6915-9fa3-4865-8e5e-8563a9e32a8d">Dolby.io&nbsp;account</a></li></ul>
+
+
+
+<h1>What the App will Look Like</h1>
+
+
+
+<p>Here&#8217;s what the final app looks like. View the <a href="https://github.com/dolbyio-samples/blog-android-kotlin-audio-call">GitHub repo here!</a></p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/Screen-Recording-2022-03-30-at-6.49.06-PM.gif" alt="Create conference call gif" class="wp-image-5525" width="249" height="515" /></figure></div>
+
+
+
+<h1>Setup</h1>
+
+
+
+<h2>Creating a Dolby.io Account</h2>
+
+
+
+<p>Before coding, we&#8217;re going to have to create a <a href="http://dolby.io/">Dolby.io</a> account. Go to <a href="http://dolby.io/">Dolby.io</a> and click on <strong>Sign Up</strong> to get started. Once you&#8217;re registered, click on &#8220;Add a New App&#8221; in the dashboard page.</p>
+
+
+
+<p>Feel free to name the application anything you&#8217;d like! For the sake of this post, we&#8217;ll name it&nbsp;<strong>Android Audio Conference Call</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/Dashboard-1024x518.png" alt="Dolby.io dashboard" class="wp-image-5515" width="513" height="259" srcset="https://dolby.io/wp-content/uploads/2022/03/Dashboard-1024x518.png 1024w, https://dolby.io/wp-content/uploads/2022/03/Dashboard-300x152.png 300w, https://dolby.io/wp-content/uploads/2022/03/Dashboard-768x389.png 768w, https://dolby.io/wp-content/uploads/2022/03/Dashboard.png 1114w" sizes="(max-width: 513px) 100vw, 513px" /></figure></div>
+
+
+
+<p>Once we&#8217;ve got that created, you&#8217;ll see a new application under the <strong>Applications</strong> tab on the dashboard. Now whenever we need the Communications API keys, we can access them by either clicking on our application under the <strong>Applications tab</strong> or on the left side-bar.</p>
+
+
+
+<h2 id="h-setting-up-android-studio">Setting Up Android Studio</h2>
+
+
+
+<p>Now that we&#8217;ve created an account and application, let&#8217;s start coding!</p>
+
+
+
+<p>Open up Android Studio and create a new empty project. Go ahead and fill out the required fields and make sure to select Kotlin as the app&#8217;s language. Once you&#8217;re done filling that out, click <strong>finish</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project-1024x781.png" alt="Android Studio create new project screen" class="wp-image-5516" width="624" height="475" srcset="https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project-1024x781.png 1024w, https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project-300x229.png 300w, https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project-768x585.png 768w, https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project-1536x1171.png 1536w, https://dolby.io/wp-content/uploads/2022/03/Android-Studio-Create-New-Project.png 1842w" sizes="(max-width: 624px) 100vw, 624px" /></figure></div>
+
+
+
+<h3 id="h-gradle-setup">Gradle Setup</h3>
+
+
+
+<p>After your app finishes loading, open up the&nbsp;<a href="https://developer.android.com/studio/build?hl=en">build.gradle (app)&nbsp;file</a>. Here we&#8217;ll include the VoxeetSDK depdendency and enable viewBinding.</p>
+
+
+
+<p>You can find the latest version of the Android SDK <a href="https://github.com/voxeet/voxeet-sdk-android">here</a>!</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-java">android {
+    ...
+    buildFeatures {
+        viewBinding = true
+    }
+}
+ 
+dependencies {
+    ...
+    implementation (&quot;com.voxeet.sdk:sdk:${version}&quot;) {
+        transitive = true
+    }
+}</code></pre>
+
+
+
+<p>Then go into your <code>settings.gradle</code> file and add the Voxeet maven url under the repositories section.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-java">dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url &quot;https://android-sdk.voxeet.com/release&quot; }
+    }
+}</code></pre>
+
+
+
+<p>After adding the dependency, sync the project.</p>
+
+
+
+<h3>Adding Permissions to <code>AndroidManifest.xml</code></h3>
+
+
+
+<p>Next go to the <code>AndroidManifest.xml</code> file and add these permissions between the manifest and application tag to enable internet and record audio in your app.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-markup">&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    package=&quot;com.dolbyio.android_audio_conference_call&quot;&gt;
+   
+    &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+    &lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
+    &lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;
+
+    &lt;application
+       ...</code></pre>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-CreatinganEmulator">Creating an Emulator (Optional)</h3>
+
+
+
+<p>Open the Device Manager in the top right of Android Studio.</p>
+
+
+
+<p>If you don&#8217;t have an existing emulator, click on <strong>Device Manager &gt; Create Device &gt; Emulator of choice, select a system image and click on finish.</strong></p>
+
+
+
+<p>For this post, we created a Pixel 4 XL emulator using API 30.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/EmulatorCreation.gif" alt="How to create an emulator" class="wp-image-5518" width="591" height="472" /></figure></div>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-EnablingAndroidEmulatorMicrophone">Enabling Android Emulator Microphone (Optional)</h3>
+
+
+
+<p>Run the emulator and click on settings. In the settings window, click on the Microphone option and enable all fields.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/EnableMicrophone.gif" alt="Enabling Android emulator microphone" class="wp-image-5519" width="610" height="486" /></figure></div>
+
+
+
+<h1 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementingtheConferenceCall">Implementing the Conference Call</h1>
+
+
+
+<h2 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-RequestMicrophonePermissions">Request Microphone Permissions</h2>
+
+
+
+<p>Although we&#8217;ve enabled the emulator microphone, we&nbsp;still need to add&nbsp;the necessary microphone permissions to our app.</p>
+
+
+
+<p>In your&nbsp;<code>MainActivity.kt</code>&nbsp;file, we&#8217;ll be setting up our microphone permissions!</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">const val REQUEST_CODE = 200
+
+class MainActivity : AppCompatActivity() {
+    ...
+    private var permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
+    private var permissionGranted = false
+ 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        ...
+        val permissionGranted = ActivityCompat.checkSelfPermission(this@MainActivity, permissions[0]) == PackageManager.PERMISSION_GRANTED
+        if (!permissionGranted) {
+            ActivityCompat.requestPermissions(this@MainActivity, permissions, REQUEST_CODE)
+        }
+    }
+ 
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array&lt;out String&gt;,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_CODE) {
+            permissionGranted = (grantResults[0] == PackageManager.PERMISSION_GRANTED)
+        }
+    }
+}</code></pre>
+
+
+
+<p>Notice that we also implemented the onRequestPermissionResult function. After the user has allowed mic permissions, this&nbsp;updates&nbsp;our permissions if any changes have been made.</p>
+
+
+
+<p>With this, our emulator we&#8217;ll be able to hear audio!</p>
+
+
+
+<h2 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-InitializingviewBindingandtheSDK">Initializing viewBinding and the SDK</h2>
+
+
+
+<p>Now that we&#8217;ve set up our&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;dashboard and Android Studio, let&#8217;s move onto viewBinding.</p>
+
+
+
+<p>Inside the <code>MainActivity.kt</code>, we&#8217;ll initialize a viewBinding variable which, will let us reference the different views within our app.</p>
+
+
+
+<p>Remember to grab your consumer key and secret from the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;dashboard. We&#8217;ll initialize the Communications SDK after we initialize our binding variable.</p>
+
+
+
+<p>Feel free to look at&nbsp;<a href="https://docs.dolby.io/communications-apis/docs/initializing-android">this guide</a>&nbsp;if you&#8217;d like to learn more about initializing the SDK.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+ 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        ...
+        // initialize binding
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        // initialize SDK
+        VoxeetSDK.initialize(&quot;consumerKey&quot;, &quot;consumerSecret&quot;)
+    }
+}</code></pre>
+
+
+
+<h2 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-CreatingtheLayoutfortheApp">Creating the Layout for the App</h2>
+
+
+
+<p>Next let&#8217;s create the layout of the&nbsp;<code>MainActivity.kt</code>&nbsp;XML file.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    tools:context=&quot;.MainActivity&quot;&gt;
+ 
+    &lt;EditText
+        android:id=&quot;@+id/etPodcastName&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_marginLeft=&quot;12dp&quot;
+        android:layout_marginRight=&quot;12dp&quot;
+        android:ems=&quot;10&quot;
+        android:hint=&quot;Enter podcast name here...&quot;
+        android:inputType=&quot;textPersonName&quot;
+        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;
+        app:layout_constraintLeft_toLeftOf=&quot;parent&quot;
+        app:layout_constraintRight_toRightOf=&quot;parent&quot;
+        app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt;
+ 
+    &lt;Button
+        android:id=&quot;@+id/btnCreate&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:text=&quot;Create&quot;
+        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;
+        app:layout_constraintEnd_toEndOf=&quot;parent&quot;
+        app:layout_constraintStart_toStartOf=&quot;parent&quot;
+        app:layout_constraintTop_toBottomOf=&quot;@+id/etPodcastName&quot;
+        app:layout_constraintVertical_bias=&quot;0.03&quot; /&gt;
+ 
+    &lt;Button
+        android:id=&quot;@+id/btnLeaveCall&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_marginBottom=&quot;100dp&quot;
+        android:enabled=&quot;false&quot;
+        android:text=&quot;Leave Call&quot;
+        android:visibility=&quot;invisible&quot;
+        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;
+        app:layout_constraintEnd_toEndOf=&quot;parent&quot;
+        app:layout_constraintHorizontal_bias=&quot;0.498&quot;
+        app:layout_constraintStart_toStartOf=&quot;parent&quot; /&gt;
+&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</code></pre>
+
+
+
+<h2 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementingtheConferenceCallHelperFunctions">Implementing the Conference Call Helper Functions</h2>
+
+
+
+<p>Once we&#8217;ve set up our XML, let&#8217;s implement the functions that will help us create a conference call.</p>
+
+
+
+<p>Add these function definitions in your&nbsp;<code>MainActivity.kt</code>&nbsp;file.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">class MainActivity : AppCompatActivity() {
+    ...
+    // open a session for the participant creating a call
+    private fun openSession(
+        name: String,
+        externalID: String = &quot;&quot;,
+        avatarURL: String = &quot;&quot;
+    ): Promise&lt;Boolean&gt; {...}
+ 
+    // create a call Promise object
+    private fun createConferencePromise(
+        conferenceName: String
+    ): PromiseInOut&lt;Conference, Conference&gt; {...}
+ 
+    // returns a Promise object allowing us to join the call   
+    private fun joinCall(conferencePromise: Promise&lt;Conference&gt;): PromiseInOut&lt;Conference, Conference&gt; {...}
+ 
+    // closes the participant&#039;s session
+    // called when participant leaves the call
+    private fun closeSession() {...}
+ 
+    // logs the error to logcat if VoxeetSDK create or join promise fails
+    private fun error(): ErrorPromise? {...}
+}</code></pre>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementingopenSession()function">Implementing&nbsp;<code>openSession()</code>&nbsp;function</h3>
+
+
+
+<p>The&nbsp;<code>openSession()</code>&nbsp;function will allow us to register the participants&#8217; info in the Voxeet service. Before even creating a conference, a user must always open a session.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun openSession(
+        name: String,
+        externalID: String = &quot;&quot;,
+        avatarURL: String = &quot;&quot;
+    ): Promise&lt;Boolean&gt; {
+    // opens a new session for participant
+    return VoxeetSDK.session().open(ParticipantInfo(name, externalID, avatarURL))
+}</code></pre>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementingcreateConferencePromise()function">Implementing&nbsp;<code>createConferencePromise()</code>&nbsp;function</h3>
+
+
+
+<p>Once we have an open session, we can now create a conference call using the VoxeetSDK.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun createConferencePromise(
+    conferenceName: String
+): PromiseInOut&lt;Conference, Conference&gt; {
+    // set paramaters for our conference call
+    val paramsHolder = ParamsHolder()
+    paramsHolder.setDolbyVoice(isDolbyVoice)
+    paramsHolder.setVideoCodec(&quot;VP8&quot;)
+    paramsHolder.setAudioOnly(true)
+ 
+    // add parameters to conference builder
+    val conferenceCreateOptions = ConferenceCreateOptions.Builder()
+        .setConferenceAlias(conferenceName)
+        .setParamsHolder(paramsHolder)
+        .build()
+ 
+    val createPromise = VoxeetSDK.conference().create(conferenceCreateOptions)
+ 
+    return joinCall(createPromise)
+}</code></pre>
+
+
+
+<p>So what we&#8217;ve done so far is set up our parameters and create a promise for the conference call. The next step is to handle that promise object in the&nbsp;<code>joinCall()</code>&nbsp;function we&#8217;ll be implementing!</p>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementingjoinCall()function">Implementing&nbsp;<code>joinCall()</code>&nbsp;function</h3>
+
+
+
+<p>The <code>joinCall()</code> function will allow us to now hop into the audio-only conference we create when we call the <code>createConferencePromise()</code> function handling the promise returned.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun joinCall(conferencePromise: Promise&lt;Conference&gt;): PromiseInOut&lt;Conference, Conference&gt; {
+    val joinPromise = conferencePromise.then(ThenPromise&lt;Conference, Conference&gt; { conference -&gt;
+        val conferenceJoinOptions: ConferenceJoinOptions = ConferenceJoinOptions.Builder(conference).build()
+            return@ThenPromise VoxeetSDK.conference().join(conferenceJoinOptions)
+        })
+    return joinPromise
+}</code></pre>
+
+
+
+<h3>Implementing&nbsp;<code>closeCall()</code>&nbsp;function</h3>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun closeSession() {
+    VoxeetSDK.session().close()
+        .then { result: Boolean?, solver: Solver&lt;Any?&gt;? -&gt;
+            Toast.makeText(this@MainActivity, &quot;closed session&quot;, Toast.LENGTH_SHORT).show()
+            updateViews(true)
+        }.error{
+            Log.e(&quot;MainActivity&quot;, &quot;Error with closing session&quot;)
+        }
+}</code></pre>
+
+
+
+<h3 id="h-implementing-error-function">Implementing&nbsp;<code>error()</code>&nbsp;function</h3>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">fun error(): ErrorPromise {
+    return ErrorPromise { error: Throwable -&gt;
+        Log.e(&quot;MainActivity&quot;, error.printStackTrace().toString())
+    }
+}</code></pre>
+
+
+
+<p>At this point, we have set up the required functions that will handle creating a conference call!</p>
+
+
+
+<h2 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-Updatingtheviews">Updating the views</h2>
+
+
+
+<p>Next we&#8217;ll create a few helper functions to update the views and handle any onClick events in our app.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun initializeBtnCreateCall() {...}
+ 
+private fun initializeBtnEndCall() {...}
+ 
+private fun updateViews(enabled: Boolean) {...}</code></pre>
+
+
+
+<p>We can now use the binding variable we initialized in the onCreate() function to listen for any button clicks.</p>
+
+
+
+<h3 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-ImplementinginitializeBtnCreateCall()function">Implementing&nbsp;<code>initializeBtnCreateCall()</code>&nbsp;function</h3>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun initializeBtnCreateCall() {
+    binding.btnCreate.setOnClickListener {
+    val podcastName = binding.etPodcastName.text.toString()
+     
+    if (podcastName.isNotEmpty()) {
+        val session = openSession(&quot;Person 1&quot;)
+        session.then { result: Boolean?, solver: Solver&lt;Any?&gt;? -&gt;
+            Toast.makeText(this@MainActivity, &quot;Opened session&quot;, Toast.LENGTH_SHORT).show()
+            createConferencePromise(
+                podcastName
+            ).then&lt;Any&gt;(ThenVoid { conference: Conference? -&gt;
+                Toast.makeText(this@MainActivity, &quot;${conference?.alias} conference started...&quot;, Toast.LENGTH_SHORT ).show()
+                updateViews(false)
+        })
+            .error {
+                Log.e(&quot;MainActivity&quot;, &quot;error creating a conference&quot;)
+            }
+        }.error {
+            Log.e(&quot;MainActivity&quot;, &quot;error opening a session&quot;)
+        }
+    } else {
+        Toast.makeText(this@MainActivity, &quot;Podcast name can&#039;t be empty&quot;, Toast.LENGTH_LONG).show()
+        }
+    }
+}</code></pre>
+
+
+
+<h3>Implementing&nbsp;<code>initializeBtnEndCall()</code>&nbsp;function</h3>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun initializeBtnEndCall() {
+    binding.btnLeaveCall.setOnClickListener {
+    VoxeetSDK.conference().leave()
+        .then { result: Boolean?, solver: Solver&lt;Any?&gt;? -&gt;
+            closeSession()
+        }.error(error())
+    }
+}</code></pre>
+
+
+
+<h3 id="h-implementing-updateviews-function">Implementing&nbsp;<code>updateViews()</code>&nbsp;function&nbsp;</h3>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">private fun updateViews(enabled: Boolean) {
+    binding.btnCreate.isEnabled = enabled
+    binding.etPodcastName.isEnabled = enabled
+    binding.btnLeaveCall.isEnabled = !enabled
+    if (!enabled) {
+        binding.btnLeaveCall.visibility = View.VISIBLE
+    } else {
+        binding.btnLeaveCall.visibility = View.INVISIBLE
+    }
+}</code></pre>
+
+
+
+<h1 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-Puttingitalltogether">Putting it all together</h1>
+
+
+
+<p>Now we have all the necessary parts to create our first conference call using the Communications APIs!</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-kotlin">class MainActivity : AppCompatActivity() {
+ 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+ 
+        val permissionGranted = ActivityCompat.checkSelfPermission(this@MainActivity, permissions[0]) == PackageManager.PERMISSION_GRANTED
+        if (!permissionGranted) {
+            ActivityCompat.requestPermissions(this@MainActivity, permissions, REQUEST_CODE)
+        }
+                 
+        VoxeetSDK.initialize(&quot;consumerKey&quot;, &quot;consumerSecret&quot;)
+ 
+        initializeBtnCreateCall()
+        initializeBtnEndCall()
+    }
+}</code></pre>
+
+
+
+<h1 id="HowtoCreateYourFirstAudioConferenceCallUsingtheCommunicationsSDKinAndroidinKotlin-RuntheApp!">Run the App!</h1>
+
+
+
+<p>Let&#8217;s run the app&nbsp;and try&nbsp;creating a call!</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/Screen-Recording-2022-03-30-at-6.49.06-PM.gif" alt="Create conference call gif" class="wp-image-5525" width="249" height="515" /></figure></div>
+
+
+
+<p>When you check the <a href="http://dolby.io/">Dolby.io</a> dashboard, you&#8217;ll see a conference has been created. To get here, click on the application we created earlier and go to the monitor section under Communications APIs. Here you&#8217;ll be able to see the all the conference details including if the call is live, name, conference ID, and more!</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM-1024x520.png" alt="Conference call made in Dolby.io dashboard" class="wp-image-5566" width="696" height="353" srcset="https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM-1024x520.png 1024w, https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM-300x152.png 300w, https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM-768x390.png 768w, https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM-1536x780.png 1536w, https://dolby.io/wp-content/uploads/2022/03/Screen-Shot-2022-04-05-at-10.53.35-AM.png 1920w" sizes="(max-width: 696px) 100vw, 696px" /></figure></div>
+
+
+
+<p><strong>Congrats! You&#8217;ve officially made your first audio conference call using Dolby.io!</strong></p>
+
+
+
+<p><a href="https://github.com/dolbyio-samples/blog-android-kotlin-audio-call">Link to GitHub repo</a></p>
+
+
+
+<p>Want to learn more? Visit our <a href="https://docs.dolby.io/communications-apis/docs/android-overview" target="_blank" rel="noreferrer noopener">Android Communications SDK Docs here!</a></p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/using-kotlin-to-create-your-first-audio-voice-call-on-android-with-dolby-io/">Using Kotlin to Create Your First Audio Voice Call on Android with Dolby.io</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Using Music Mastering on &#8220;Take Me Out to the Ball Game&#8221;</title>
+		<link>https://dolby.io/blog/using-music-mastering-on-take-me-out-to-the-ball-game/</link>
+		
+		<dc:creator><![CDATA[Braden Riggs]]></dc:creator>
+		<pubDate>Thu, 07 Apr 2022 15:46:47 +0000</pubDate>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[music mastering]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5578</guid>
+
+					<description><![CDATA[<p>In this guide we explore how to algorithmically remaster the 1908 baseball anthem "Take Me Out to the Ball Game" with the Dolby.io Music Mastering API.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/using-music-mastering-on-take-me-out-to-the-ball-game/">Using Music Mastering on &#8220;Take Me Out to the Ball Game&#8221;</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>The 1908<a href="https://en.wikipedia.org/wiki/Jack_Norworth">&nbsp;Jack Norworth</a>&nbsp;and<a href="https://en.wikipedia.org/wiki/Albert_Von_Tilzer">&nbsp;Albert Von Tilzer</a>&nbsp;song &#8220;Take Me Out to the Ball Game&#8221; has been a classic staple across ballparks becoming synonymous with America&#8217;s favorite pastime. At over 114 years old, the original version of &#8220;Take Me Out to the Ball Game&#8221; was recorded on a&nbsp;<a href="https://en.wikipedia.org/wiki/Phonograph_cylinder">two-minute Edison Wax Cylinder</a>&nbsp;by singer and performer&nbsp;<a href="https://en.wikipedia.org/wiki/Edward_Meeker">Edward Meeker</a>, quickly becoming a beloved classic.&nbsp; With the baseball season getting underway this&nbsp;<a href="https://www.mlb.com/news/mlb-revised-2022-regular-season-schedule">April 7th</a>&nbsp;we thought it about time to dust off the gloves, pick up our bats,&nbsp;step up to&nbsp;our Python environments, and get to work algorithmically remastering the classic anthem with the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Music Mastering API.</p>
+
+
+
+<p>Typically performed by audio engineers, Mastering is a labor-intensive post-production process usually applied as the last step in creating a song and is the final polish that takes a track from good to great. Because &#8220;Take Me Out to the Ball Game&#8221; was recorded and produced in 1908 the mastering and post-production technology was very limited and&nbsp;hence it could be interesting to explore the impact of applying a music mastering algorithm on the original recording, and the effect that has on the palatability&nbsp;of the track.</p>
+
+
+
+<h3 id="h-picking-a-version"><strong>Picking a Version:</strong></h3>
+
+
+
+<p>Before we can get started remastering &#8220;Take Me Out to the Ball Game&#8221;, we first need to pick a version of the song. Whilst we often hear the catchy tune played during the middle of the seventh inning,&nbsp;that&nbsp;version isn&#8217;t the original and is subject to copyright protection. For this project, we will be using the 1908 version found&nbsp;<a href="https://ia802605.us.archive.org/26/items/TakeMeOutToTheBallGame_243/TakeMeOuttotheBallGame_edmeeker.mp3">here</a>, as it is now available in the&nbsp;<a href="http://publicdomainaudiovideo.blogspot.com/2010/04/take-me-out-to-ball-game.html">public domain and free to use</a>. Unfortunately, the highest-quality version of the 1908 song is stored as an MP3. Whilst this works with the API, Free Lossless Audio Codec (FLAC) or other lossless file types are preferred as&nbsp;they produce the best results during the mastering post-production process.&nbsp;&nbsp;</p>
+
+
+
+<h3><strong>The Music Mastering API:</strong></h3>
+
+
+
+<p>With our song in hand, it&#8217;s time to introduce the tool that will be doing the majority of the heavy lifting.&nbsp;<a href="https://dolby.io/products/music-mastering/">The&nbsp;</a><a href="http://dolby.io/">Dolby.io</a><a href="https://dolby.io/products/music-mastering/">&nbsp;Music Mastering API&nbsp;</a>is a music enhancement tool that allows users to programmatically master files via a number of sound profiles specific to certain genres and styles. The API isn&#8217;t free, however,&nbsp;the company&nbsp;offers trial credits if you sign up and additional trial credits if you add your credit card to the platform.</p>
+
+
+
+<p>For this project, the trial tier will be sufficient which is available if you&nbsp;<a href="https://dashboard.dolby.io/signup">sign up here</a>.&nbsp;</p>
+
+
+
+<p>Once you have created an account and logged in, navigate over to the applications tab,&nbsp;select &#8220;my_first_app&#8221;, and locate your&nbsp;<strong>Media APIs API Key</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="728" src="https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-1024x728.png" alt="Dolby.io Dashboard. In this guide we will explore how to algorithmically remaster the classic baseball anthem &quot;Take Me Out to the Ball Game&quot; with the Dolby.io Music Mastering API." class="wp-image-5579" srcset="https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-1024x728.png 1024w, https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-300x213.png 300w, https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-768x546.png 768w, https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-1536x1092.png 1536w, https://dolby.io/wp-content/uploads/2022/04/image2022-4-1_10-25-36-2048x1456.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>An example screenshot of the Dolby.io dashboard.</figcaption></figure></div>
+
+
+
+<p>It&#8217;s important to note that all&nbsp;<a href="http://dobly.io/">Dobly.io</a>&nbsp;media APIs adhere to the<a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api#:~:text=A%20REST%20API%20(also%20known,by%20computer%20scientist%20Roy%20Fielding.">&nbsp;REST framework,</a>&nbsp;meaning they are language agnostic. For the purposes of this project, I will be using the tool in Python, however, it works in any other language.</p>
+
+
+
+<h3><strong>Adding it to the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Server</strong></h3>
+
+
+
+<p>To utilize the Music Mastering API we first need to store the MP3 file on the cloud. This can be done with either a cloud service provider such as&nbsp;<a href="https://docs.dolby.io/media-apis/docs/aws-s3">AWS</a>, or you can use the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Media Storage platform. For simplicity, we will use the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;platform which can be accessed via a REST API call.</p>
+
+
+
+<p>To get started we need to import the Python &#8220;Requests&#8221; package and specify a path to the MP3 file on our local machine.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">import requests #Requests is useful for making HTTP requests and interacting with REST APIs
+file_path = &quot;Take-Me-Out-to-the-Ball-Game.mp3&quot;</code></pre>
+
+
+
+<p>Next, we need to specify the URL we want the Requests package to interact with, specifically the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Media Input address. In addition to the input URL, we also need to format a header that will authenticate our request to the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;server with our API key.&nbsp;</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">url = &quot;https://api.dolby.com/media/input&quot;
+headers = {
+    &quot;x-api-key&quot;: &quot;YOUR DOLBY.IO MEDIA API KEY&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Accept&quot;: &quot;application/json&quot;,
+}</code></pre>
+
+
+
+<p>Finally, we need to format a body that specifies the name we want to give our file once it is added to the server.&nbsp;</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">body = {
+    &quot;url&quot;: &quot;dlb://input-example.mp3&quot;,
+}</code></pre>
+
+
+
+<p>With the URL, Head, and Body all formatted correctly we can use the Requests package to create a pre-signed URL to which we can upload our MP3 file to.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">response = requests.post(url, json=body, headers=headers)
+response.raise_for_status()
+presigned_url = response.json()[&quot;url&quot;]
+ 
+print(&quot;Uploading {0} to {1}&quot;.format(file_path, presigned_url))
+with open(file_path, &quot;rb&quot;) as input_file:
+    requests.put(presigned_url, data=input_file)</code></pre>
+
+
+
+<h3><strong>Starting a Mastering Job</strong></h3>
+
+
+
+<p>Once the audio file has been moved to the cloud we can begin calling a mastering job.&nbsp;The Music Mastering API includes a number of predefined “profiles” which match up to a selection of audio genres such as Hip Hop or Rock. For the best results, a&nbsp;Rock song should be mastered with the Rock profile, however, the process of picking a profile can require a bit of experimentation.</p>
+
+
+
+<p>Because matching creative intent with different sound profiles can take a few trials the API offers a &#8220;preview version&#8221;&nbsp;where you can master a 30 seconds segment of a song with 3 different profiles. We format the body of this request to include this information as well as when we want the segment to begin.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">body = {
+    &quot;inputs&quot;: [
+        {&quot;source&quot;: &quot;dlb://input-example.mp3&quot;, &quot;segment&quot;: {&quot;start&quot;: 36, &quot;duration&quot;: 30}} #36 seconds is the start of the iconic chorus.
+    ],
+    &quot;outputs&quot;: [
+        {
+            &quot;destination&quot;: &quot;dlb://example-master-preview-l.mp3&quot;,
+            &quot;master&quot;: {&quot;dynamic_eq&quot;: {&quot;preset&quot;: &quot;l&quot;}} #Lets master with the Vocal profile
+        },
+        {
+            &quot;destination&quot;: &quot;dlb://example-master-preview-m.mp3&quot;,
+            &quot;master&quot;: {&quot;dynamic_eq&quot;: {&quot;preset&quot;: &quot;m&quot;}} #Lets master with the Folk profile
+        },
+        {
+            &quot;destination&quot;: &quot;dlb://example-master-preview-n.mp3&quot;,
+            &quot;master&quot;: {&quot;dynamic_eq&quot;: {&quot;preset&quot;: &quot;n&quot;}} #Lets master with the Classical profile
+        }
+         
+    ]
+}</code></pre>
+
+
+
+<p>The Header stays the same as the one we used to upload the file to the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Server and the URL changes to match the Music Mastering endpoint.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">url = &quot;https://api.dolby.com/media/master/preview&quot;
+headers = {
+    &quot;x-api-key&quot;: &quot;YOUR DOLBY.IO MEDIA API KEY&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Accept&quot;: &quot;application/json&quot;,
+}</code></pre>
+
+
+
+<p>We can use the Requests package to deliver our profile selections and start the mastering job.&nbsp;</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">response = requests.post(url, json=body, headers=headers)
+response.raise_for_status()
+print(response.json())
+job_id = response.json()[&quot;job_id&quot;]</code></pre>
+
+
+
+<p>This process can take a minute to complete. To check the status of the job we can format another request to the same URL with the&nbsp;Job_ID&nbsp;included in the body to check the progress of the master.&nbsp;</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">url = &quot;https://api.dolby.com/media/master/preview&quot;
+headers = {
+        &quot;x-api-key&quot;: &quot;YOUR DOLBY.IO MEDIA API KEY&quot;,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;Accept&quot;: &quot;application/json&quot;,
+    }
+params = {&quot;job_id&quot;: job_id}
+response = requests.get(url, params=params, headers=headers)
+response.raise_for_status()
+print(response.json())</code></pre>
+
+
+
+<p>The response from the request outputs the progress of the job between 0% and 100%.</p>
+
+
+
+<h3><strong>Downloading the Mastered File</strong></h3>
+
+
+
+<p>With our file mastered it&#8217;s time to download the three master previews so we can hear the difference. The workflow for downloading files mirrors that of how the rest of the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;APIs work. Much like uploading a file or starting a job, we format a header with our API key and a body that points to the mastering output on the Dolby.io server.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">import shutil #File operations package useful for downloading files from a server.
+ 
+url = &quot;https://api.dolby.com/media/output&quot;
+headers = {
+        &quot;x-api-key&quot;: api_key,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;Accept&quot;: &quot;application/json&quot;,
+    }
+ 
+for profile in [&quot;l&quot;,&quot;m&quot;,&quot;n&quot;]:
+ 
+    output_path = &quot;out/preview-&quot; + profile + &quot;.mp3&quot;
+ 
+    preview_url = &quot;dlb://example-master-preview-&quot; + profile + &quot;.mp3&quot;
+    args = {&quot;url&quot;: preview_url}
+ 
+    with requests.get(url, params=args, headers=headers, stream=True) as response:
+        response.raise_for_status()
+        response.raw.decode_content = True
+        print(&quot;Downloading from {0} into {1}&quot;.format(response.url, output_path))
+        with open(output_path, &quot;wb&quot;) as output_file:
+            shutil.copyfileobj(response.raw, output_file)</code></pre>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="340" src="https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-1024x340.png" alt="Music Mastering workflow. In this guide we will explore how to algorithmically remaster the classic baseball anthem &quot;Take Me Out to the Ball Game&quot; with the Dolby.io Music Mastering API." class="wp-image-5580" srcset="https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-1024x340.png 1024w, https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-300x100.png 300w, https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-768x255.png 768w, https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-1536x510.png 1536w, https://dolby.io/wp-content/uploads/2022/04/Mastering-Workflow-1-2048x680.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Summary of mastering job workflow from locating the file to downloading results.</figcaption></figure></div>
+
+
+
+<p>With the mastered files downloaded locally, we can listen to both and hear the difference between the original and one of our Masters.&nbsp;</p>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/04/Take-Me-Out-to-the-Ball-Game.mp3"></audio><figcaption>The original version of &#8220;Take Me Out to the Ball Game&#8221;, sung by Edward Meeker in 1908.</figcaption></figure>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/04/preview-n.mp3"></audio><figcaption>Mastered version of &#8220;Take Me Out to the Ball Game&#8221; with the Dolby.io Classical music profile (Profile n) focusing on wide dynamics, and warm full tones for orchestral instruments.</figcaption></figure>
+
+
+
+<p>We can also hear the subtle differences between the Masters.</p>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/04/preview-l.mp3"></audio><figcaption>Mastered version of &#8220;Take Me Out to the Ball Game&#8221; with the Dolby.io Vocal music profile (Profile l) focusing on the mid-frequencies to highlight vocals.</figcaption></figure>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/04/preview-m.mp3"></audio><figcaption>Mastered version of &#8220;Take Me Out to the Ball Game&#8221; with the Dolby.io Folk music profile (Profile m) focusing on light touch with ample mid-frequency clarity to let acoustic instruments shine in the mix.</figcaption></figure>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/04/preview-n-1.mp3"></audio><figcaption>Mastered version of &#8220;Take Me Out to the Ball Game&#8221; with the Dolby.io Classical music profile (Profile n) focusing on wide dynamics, and warm full tones for orchestral instruments.</figcaption></figure>
+
+
+
+<p>For the purposes of this demo, we only mastered with the last three profiles, however, there are&nbsp;<a href="https://docs.dolby.io/media-apis/docs/music-mastering-api-guide">14 different music mastering profiles</a>&nbsp;to pick from. From my testing, I like the &#8220;Classical&#8221; profile (Profile n) the best, but everyone is different, try it out yourself.&nbsp;</p>
+
+
+
+<h3><strong>A More Modern Example</strong></h3>
+
+
+
+<p>Whilst the classic still doesn&#8217;t sound modern, remastering the track does make it a&nbsp;little more clear and hence more enjoyable to listen to.&nbsp;Typically the&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Music Mastering API is built for contemporary samples recorded on more modern equipment in lossless formats such as FLAC and is not designed to be an audio restoration tool. For the purposes of this investigation, we wanted to see the impact post-production mastering would have on the track rather than attempting to outright &#8220;fix&#8221; the original.&nbsp;</p>
+
+
+
+<p>Currently, the Dolby.io team has a <a href="https://static.dolby.link/demos/music-mastering/index.html">demo hosted here</a> that lets you listen to before and after examples of licensed contemporary tracks which better exemplifies the use case of the API. Because Dolby.io owns the licenses to those songs they are allowed to host the content, whereas for this project I wanted to pick a track in the public domain so anyone with an interest can test it out for themselves without fear of infringing on copyright law.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1024" height="464" src="https://dolby.io/wp-content/uploads/2022/04/image-1024x464.png" alt="Offical Dolby.io Music Mastering Demo. Using Music Mastering on “Take Me Out to the Ball Game”" class="wp-image-5588" srcset="https://dolby.io/wp-content/uploads/2022/04/image-1024x464.png 1024w, https://dolby.io/wp-content/uploads/2022/04/image-300x136.png 300w, https://dolby.io/wp-content/uploads/2022/04/image-768x348.png 768w, https://dolby.io/wp-content/uploads/2022/04/image-1536x696.png 1536w, https://dolby.io/wp-content/uploads/2022/04/image-2048x928.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>The Dolby.io Music Mastering demo, <a href="https://static.dolby.link/demos/music-mastering/index.html">available here</a>.</figcaption></figure></div>
+
+
+
+<p>If the Music Mastering API is something you are interested in further exploring check out the <a href="https://docs.dolby.io/media-apis/docs/music-mastering-api-guide">dolby.io documentation</a> around the API or the <a href="https://static.dolby.link/demos/music-mastering/index.html">live demo mentioned above</a>, otherwise let&#8217;s get excited for an awesome Baseball season ahead and &#8220;<em>root, root, root for the home team&#8221;</em>.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/using-music-mastering-on-take-me-out-to-the-ball-game/">Using Music Mastering on &#8220;Take Me Out to the Ball Game&#8221;</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://ia802605.us.archive.org/26/items/TakeMeOutToTheBallGame_243/TakeMeOuttotheBallGame_edmeeker.mp3" length="2068618" type="audio/mpeg" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/Take-Me-Out-to-the-Ball-Game.mp3" length="480834" type="audio/mpeg" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/preview-n.mp3" length="968320" type="audio/mpeg" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/preview-l.mp3" length="968320" type="audio/mpeg" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/preview-m.mp3" length="968320" type="audio/mpeg" />
+<enclosure url="https://dolby.io/wp-content/uploads/2022/04/preview-n-1.mp3" length="968320" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>Introducing the Dolby.io Media Transcode API</title>
+		<link>https://dolby.io/blog/introducing-the-dolby-io-transcoding-api/</link>
+		
+		<dc:creator><![CDATA[Jayson DeLancey]]></dc:creator>
+		<pubDate>Mon, 04 Apr 2022 14:31:42 +0000</pubDate>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[transcode]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5514</guid>
+
+					<description><![CDATA[<p>The Transcode API provides another powerful tool from Dolby.io to help you understand, improve, and distribute media content at scale.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/introducing-the-dolby-io-transcoding-api/">Introducing the Dolby.io Media Transcode API</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>The&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Media Transcode API is now generally available for any developer to use on their projects with confidence. With the Transcode API,&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;brings greater flexibility to support file-based workflows with industry leading high-quality results. As with the full range of&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;APIs and SDKs, these are available self-service for you to sign up and try right away.</p>
+
+
+
+<h2 id="h-what-is-a-transcode-api">What is a Transcode API?</h2>
+
+
+
+<p>When building an app or tool that must process large volumes of media, whether that is handling user-generated content, converting to streaming formats, personalized video editing, or speeding up the production process it is common to need a way of converting from one format to another. By using the Transcode API, developers can build apps that insure a high quality experience for audiences on any screen they may use.</p>
+
+
+
+<p>✓ Includes tasks like trimming the length of a file, concatenating multiple videos together, converting from one format or resolution to another, etc.</p>
+
+
+
+<p>✓ Support for the most frequently used audio and web video formats including MP4, AAC, WEBM, AVC, HEVC, VP8, VP9, and <a href="https://docs.dolby.io/media-apis/docs/transcode-api-guide#supported-formats" target="_blank" rel="noreferrer noopener">many more</a>.</p>
+
+
+
+<p>✓ Support for multi-cloud storage to keep your media where you want it whether on AWS, Azure, GCP, or another provider.</p>
+
+
+
+<p>✓ Optimized for web delivery, we take the complexity out of delivering media to any screen with Adaptive Bitrate HLS or DASH support while giving you control over parameters to the API when you need it.</p>
+
+
+
+<p>From today&#8217;s <a href="https://www.globenewswire.com/news-release/2022/04/04/2415775/0/en/Dolby-announces-general-availability-of-Dolby-io-Transcode-API.html" target="_blank" rel="noreferrer noopener">press release</a>:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>&#8220;We built the Transcode API to take the complexity out of transcoding&#8221; said Marie Huwe, Senior Vice President, Dolby.io.&nbsp; &#8220;Transcode is the latest in our suite of Media APIs including Analyze and Enhance APIs. You can analyze your media, figure out how to enhance it, and apply just the right amount of processing so it looks and sounds its best, allowing you to focus on what’s important – creating content your customers and audiences will love.&#8221;</p></blockquote>
+
+
+
+<p>The <a href="https://docs.dolby.io/media-apis/docs/transcode-api-guide" target="_blank" rel="noreferrer noopener">Transcode API</a>&nbsp;provides another powerful tool from&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;to help you understand, improve, and distribute media content at scale.</p>
+
+
+
+<h2>Getting Started with Transcode</h2>
+
+
+
+<p>The&nbsp;<a href="http://dolby.io/">Dolby.io</a>&nbsp;Transcode API is designed to be a flexible component in your media applications. There are many workflows and use cases, but to help get started with some examples we&#8217;ve provided some guides for common tasks.</p>
+
+
+
+<ul><li><a href="https://docs.dolby.io/media-apis/docs/how-to-concatenate-content" target="_blank" rel="noreferrer noopener">How-to Stitch or Concatenate Multiple Files Together</a></li><li><a href="https://docs.dolby.io/media-apis/docs/how-to-trim-a-media-file" target="_blank" rel="noreferrer noopener">How-to Trim or Shorten a Media File</a></li><li><a href="https://docs.dolby.io/media-apis/docs/how-to-transcode-a-single-audio-file" target="_blank" rel="noreferrer noopener">How-to Create Audio-Only or Video-Only Variations</a></li><li><a href="https://docs.dolby.io/media-apis/docs/how-to-transcode-to-hls-streaming-format" target="_blank" rel="noreferrer noopener">How-to Create Streaming Formats Such as HLS</a></li><li><a href="https://docs.dolby.io/media-apis/docs/how-to-transcode-with-cloud-storage" target="_blank" rel="noreferrer noopener">How-to Transcode Media on AWS, Azure, or Google Cloud</a></li></ul>
+
+
+
+<p>This is just the start of what you can accomplish with the <a href="https://docs.dolby.io/media-apis/docs/transcode-api-guide" target="_blank" rel="noreferrer noopener">Transcode API</a>. Try it for yourself. The <a href="https://docs.dolby.io/media-apis/docs/transcoding-media" target="_blank" rel="noreferrer noopener">Getting Started with Transcoding Media</a> quick start shows you how to transcode a file in just a few lines of code.</p>
+
+
+
+<h2 id="h-get-more-from-media-with-dolby-io">Get More From Media with Dolby.io</h2>
+
+
+
+<p>The addition of the <a href="https://dolby.io/products/transcode/">Transcode API</a> with the portfolio of <a href="https://dolby.io/products/analyze/">Analyze</a> and <a href="https://dolby.io/products/enhance/">Enhance</a> APIs gives you access to a collection of tools that put the magic of Dolby&#8217;s decades of experience in audio and video to work for you. You get competitive <a href="https://dolby.io/pricing/">pricing</a> and Dolby&#8217;s commitment to quality delivered at scale.</p>
+
+
+
+<p>Help your users get more out of their media with&nbsp;<a href="http://dolby.io/">Dolby.io</a>.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/introducing-the-dolby-io-transcoding-api/">Introducing the Dolby.io Media Transcode API</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Transcribing Dolby.io Communications Recordings with Deepgram</title>
+		<link>https://dolby.io/blog/transcribing-dolby-io-communications-recordings-with-deepgram/</link>
+		
+		<dc:creator><![CDATA[Griffin Solot-Kehl]]></dc:creator>
+		<pubDate>Thu, 31 Mar 2022 23:13:03 +0000</pubDate>
+				<category><![CDATA[Communications]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[transcription]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5531</guid>
+
+					<description><![CDATA[<p>A tutorial on how to use the Dolby.io Communications REST API to generate the recordings of your conferences, then transcribe them with Deepgram's "Transcribe Pre-recorded Audio" API.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/transcribing-dolby-io-communications-recordings-with-deepgram/">Transcribing Dolby.io Communications Recordings with Deepgram</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In this digital age where virtual conferences are a dime a dozen, we see a large number of them&nbsp;recorded for future records. There are many uses for these records, including sharing with people who were unable to attend live, distributing for use as training, and keeping&nbsp;backups&nbsp;for future reference. One aspect of these recordings that is taken for granted, however, is accessibility. In this blog, we will demonstrate how to take recordings from your Dolby.io Communications conferences, and use&nbsp;<a href="https://deepgram.com/">Deepgram</a>&nbsp;to transcribe them to text.</p>
+
+
+
+<p>Having text copies of your conference recordings is a good way to offer alternative ways to digest the information. Some people read faster than they listen to spoken&nbsp;words. Some people might not speak the same first language as the one in the conference, and are more comfortable reading it. Others might be hearing impaired, and prefer to read for the most amount of comfort. Whatever reason one might have, we want to make it simple to automate the transcription generation process. Here, we will be&nbsp;using the Dolby.io&nbsp;<a href="https://docs.dolby.io/communications-apis/reference/authentication-api">Communications&nbsp;REST APIs</a>&nbsp;in tandem with Deepgram&#8217;s&nbsp;<a href="https://developers.deepgram.com/api-reference/#transcription-prerecorded">Pre-recorded Audio API</a>&nbsp;in Python as an example of how to generate this process.</p>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-InstallingLibraries">Installing Libraries</h2>
+
+
+
+<p>Before we&nbsp;begin coding,&nbsp;we need to ensure we have all the proper libraries for calling these APIs. We&nbsp;can do this with a simple&nbsp;pip&nbsp;command (use the appropriate pip command for your operating system):</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-bash">pip3 install asyncio deepgram-sdk dolbyio-rest-apis</code></pre>
+
+
+
+<p>This will install both the Dolby.io and Deepgram SDKs, as well as Python&#8217;s native asynchronous function library to aid us in calling the async requests the two SDKs use.</p>
+
+
+
+<p>It is also a good idea to sign up for a free <a href="https://dolby.io/signup">Dolby.io</a> and <a href="https://console.deepgram.com/signup">Deepgram</a> account if you haven&#8217;t already, to get your API credentials.</p>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-ObtaininganAPIToken">Obtaining an API Token</h2>
+
+
+
+<p>In order to use the Dolby.io Communications REST APIs, we need to first generate a temporary access token. This is to help prevent your permanent account credentials from being accidentally leaked, as the token will expire automatically. To learn more about this, read the&nbsp;<a href="https://docs.dolby.io/communications-apis/reference/authentication-api">documentation</a>. In this case, we want to fill in the consumer key and secret with our&nbsp;<a href="https://dashboard.dolby.io/dashboard/applications/summary">credentials</a>&nbsp;from our&nbsp;<strong>Communications APIs</strong>&nbsp;(not Media). We then call the&nbsp;<code>get_api_access_token</code>&nbsp;endpoint within a function so we can generate a fresh token every time we make another call.&nbsp;This is not the most secure way to handle this,&nbsp;but will ensure we don&#8217;t run into any expired credentials down the road. To learn more, see our&nbsp;<a href="https://docs.dolby.io/communications-apis/docs/guides-security-best-practices">security best practices guide</a>.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from dolbyio_rest_apis.communications import authentication
+import asyncio
+ 
+# Input your Dolby.io Communications Credentials here
+CONSUMER_KEY = &quot;&lt;DOLBYIO_CONSUMER_KEY&gt;&quot;
+CONSUMER_SECRET = &quot;&lt;DOLBYIO_CONSUMER_SECRET&gt;&quot;
+ 
+# Create a function that will generate a new api access token when needed
+async def gen_token():
+    response = await authentication.get_api_access_token(CONSUMER_KEY, CONSUMER_SECRET)
+    return response[&#039;access_token&#039;]
+ 
+print(f&quot;Access Token: {await gen_token()}&quot;)</code></pre>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-GettingtheConferenceID">Getting the Conference ID</h2>
+
+
+
+<p>Now that we can call the Dolby.io APIs, we first want to get the internal conference ID of the recording we want to transcribe. We can do this by simply calling the&nbsp;<code>get_conferences</code>&nbsp;endpoint with our token.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from dolbyio_rest_apis.communications.monitor import conferences
+ 
+response = await conferences.get_conferences(await gen_token())
+# Save the most recent conference. Change &#039;-1&#039; to whichever conference you want.
+confId = response[&#039;conferences&#039;][-1][&#039;confId&#039;]
+print(confId)</code></pre>
+
+
+
+<p>Note that in this code sample, we are using the parameter:&nbsp;<code>[&#039;conferences&#039;][-1][&#039;confId&#039;]</code>. This will pull only the most recent conference in the list as noted by the &#8220;-1&#8221; array value. If you are automating this to work with every newly generated conference, this likely will not be an issue. However if you are looking to do this with a specific conference, we suggest using&nbsp;<a href="https://docs.dolby.io/communications-apis/reference/get-conferences">the optional parameters in the get_conferences endpoint</a>&nbsp;to obtain the desired conference ID.</p>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-ObtainingtheRecording">Obtaining the Recording</h2>
+
+
+
+<p>With the conference ID in hand, we can now call an endpoint to generate a URL that contains the audio file of our conference. For this code sample, we are using a&nbsp;<a href="https://docs.dolby.io/communications-apis/docs/guides-dolby-voice">Dolby Voice</a>&nbsp;conference, so we will use the endpoint to&nbsp;<a href="https://docs.dolby.io/communications-apis/reference/get-dolby-voice-audio-recordings">Get the Dolby Voice audio recording</a>. If you know you are not using Dolby Voice, you can use&nbsp;<a href="https://docs.dolby.io/communications-apis/reference/get-mp3-recording">this endpoint</a>&nbsp;instead. Note that we are only obtaining the audio track of the conference instead of both the audio and the video. This is for maximum file compatibility with the transcription software. Note that the URL produced is also temporary, and will expire after some time.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from dolbyio_rest_apis.communications.monitor import recordings
+ 
+# Save only the mp3 file and return as a URL.
+# If your conference does not use Dolby Voice, use &#039;download_mp3_recording&#039; instead.
+# https://github.com/dolbyio-samples/dolbyio-rest-apis-client-python/blob/main/client/src/dolbyio_rest_apis/communications/monitor/recordings.py
+response = await recordings.get_dolby_voice_recordings(await gen_token(), confId)
+recording_url = response[&#039;url&#039;]
+print(recording_url)</code></pre>
+
+
+
+<p>To help illustrate, here is an example conference recording made for transcription generated from the above code:</p>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/03/recording.m4a"></audio></figure>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-TranscodingitwithDeepgram">Transcoding it with Deepgram</h2>
+
+
+
+<p>While Deepgram does work with local files,&nbsp;the presigned recording url&nbsp;saves us many steps avoiding the hassle of needing to download and upload a file to a secure server. With the URL,&nbsp;we can&nbsp;skip those&nbsp;steps&nbsp;and directly insert the URL into the code below adapted from their&nbsp;<a href="https://developers.deepgram.com/documentation/getting-started/prerecorded/">Python Getting Started Guide</a>. The code provided only uses the&nbsp;<a href="https://developers.deepgram.com/documentation/features/punctuate/">Punctuation feature</a>, but could easily expanded with an assortment of&nbsp;<a href="https://developers.deepgram.com/documentation/features/">the many features</a>&nbsp;Deepgram provides.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from deepgram import Deepgram
+ 
+# Your Deepgram API Key
+DEEPGRAM_API_KEY = &#039;&lt;DEEPGRAM_API_KEY&gt;&#039;
+ 
+# Location of the file you want to transcribe. Should include filename and extension.
+FILE = recording_url
+ 
+async def main():
+ 
+  # Initialize the Deepgram SDK
+  deepgram = Deepgram(DEEPGRAM_API_KEY)
+   
+  # file is remote
+  # Set the source
+  source = {
+    &#039;url&#039;: FILE
+  }
+ 
+  # Send the audio to Deepgram and get the response
+  response = await asyncio.create_task(
+    deepgram.transcription.prerecorded(
+      source,
+      {
+        &#039;punctuate&#039;: True
+      }
+    )
+  )
+ 
+  # Write only the transcript to the console
+  print(response[&#039;results&#039;][&#039;channels&#039;][0][&#039;alternatives&#039;][0][&#039;transcript&#039;])
+ 
+try:
+  await main()
+  # If not running in a Jupyter notebook, run main with this line instead:
+  # asyncio.run(main())
+except Exception as e:
+  exception_type, exception_object, exception_traceback = sys.exc_info()
+  line_number = exception_traceback.tb_lineno
+  print(f&#039;line {line_number}: {exception_type} - {e}&#039;)</code></pre>
+
+
+
+<p>The Deepgram response provides many datapoints related to our speech, but to pull only the transcription of the file, we are calling&nbsp;<code>[&#039;results&#039;][&#039;channels&#039;][0][&#039;alternatives&#039;][0][&#039;transcript&#039;]</code>. Feel free to modify the response to generate whatever is most relevant to your needs. For the above sample provided, the result of the transcription is as follows:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Following text is a transcription of the s en of the parchment declaration of independence. The document on display in the rot the national archives Museum. The spelling and punctuation reflects the originals.</p></blockquote>
+
+
+
+<h2 id="TranscribingDolby.ioCommunicationsRecordingswithDeepgram-NextSteps">Next Steps</h2>
+
+
+
+<p>This is a very basic&nbsp;foray&nbsp;in how to get started with transcribing your conference recordings. We heavily suggest you invest some time into expanding this to fit your specific use case to maximize the benefit you get from using these tools.</p>
+
+
+
+<p>As mentioned before, we suggest taking a look at what Deepgram has to offer in terms of additional features you could add on to the transcription process.&nbsp;For example:&nbsp;</p>
+
+
+
+<ul><li><a href="https://developers.deepgram.com/documentation/features/diarize/">Diarization</a>&nbsp;can help differentiate who is saying what when there are multiple people in a conference.</li><li><a href="https://developers.deepgram.com/documentation/features/named-entity-recognition/">Named Entity Recognition</a>&nbsp;and/or&nbsp;<a href="https://developers.deepgram.com/documentation/features/keywords/">Keywords</a>&nbsp;to help increase accuracy by providing prior information of things like names and proper nouns.&nbsp;</li></ul>
+
+
+
+<p>The transcription of the example recording was not perfect. There are many reasons for this,&nbsp;including&nbsp;imperfect recording environments, confusing speech patterns, and compression as examples. To help give the transcription algorithms a better chance, one option could be to use the Dolby.io&nbsp;<a href="https://docs.dolby.io/media-apis/docs/enhance-api-guide">Media Enhance API</a>&nbsp;to attempt to clean up the audio before sending it to transcription.</p>
+
+
+
+<p>If you want to automatically&nbsp;generate&nbsp;a transcription after every recording is over, we can take advantage of&nbsp;<a href="https://docs.dolby.io/communications-apis/docs/webhooks-overview">webhooks</a>&nbsp;to remove the manual intervention for you. In fact, the&nbsp;<a href="https://docs.dolby.io/communications-apis/docs/webhooks-events-recordingaudioavailable">Recording.Audio.Available</a>&nbsp;event provides the recording URL within the event body itself, reducing the number of steps needed to obtain it.</p>
+
+
+
+<p>One final idea is if you do only have the video file ready for whatever reason, you can use the Dolby.io&nbsp;<a href="https://docs.dolby.io/media-apis/docs/transcode-api-guide">Media Transcode API</a>&nbsp;to convert the video file into a format accepted by the transcription service.</p>
+
+
+
+<p>You can find the source code file stored in a&nbsp;<a href="https://jupyter.org/">Jupyter</a>&nbsp;notebook at&nbsp;<a href="https://github.com/dolbyio-samples/blog-deepgram-transcribe/tree/main">this GitHub repository</a>.&nbsp;If you run into any issues, don&#8217;t hesitate to&nbsp;<a href="https://support.dolby.io/hc/en-au">contact our support team</a>&nbsp;for help, and good luck coding!</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/transcribing-dolby-io-communications-recordings-with-deepgram/">Transcribing Dolby.io Communications Recordings with Deepgram</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://dolby.io/wp-content/uploads/2022/03/recording.m4a" length="154761" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>4 Ways That Dolby.io Improves Virtual Classrooms</title>
+		<link>https://dolby.io/blog/4-ways-that-dolby-io-improves-virtual-classrooms/</link>
+		
+		<dc:creator><![CDATA[Dolby.io]]></dc:creator>
+		<pubDate>Mon, 21 Mar 2022 17:47:31 +0000</pubDate>
+				<category><![CDATA[Communications]]></category>
+		<category><![CDATA[Product]]></category>
+		<category><![CDATA[call-recording]]></category>
+		<category><![CDATA[messaging]]></category>
+		<category><![CDATA[video-conferencing]]></category>
+		<category><![CDATA[voice-call]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5183</guid>
+
+					<description><![CDATA[<p>Optimize the remote learning experience into your education platform with Dolby.io’s APIs.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/4-ways-that-dolby-io-improves-virtual-classrooms/">4 Ways That Dolby.io Improves Virtual Classrooms</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>E-learning has become a mainstay in these pandemic-adjacent times. Research by <a href="https://www.technavio.com/">Technavio</a> suggests that the e-learning market will grow to a whopping value of<a href="https://www.businesswire.com/news/home/20200615005315/en/COVID-19-Impact-and-Recovery-Analysis--Academic-E-Learning-Market-2020-2024-Demand-of-Online-Microlearning-to-Boost-Growth-Technavio"> $72 billion by 2024</a>.</p>
+
+
+
+<p>A popular component of e-learning is the interactive virtual classroom — web conference calls that allow teachers and students to connect from anywhere in the world via electronic devices. They have been crucial in helping students continue their education while respecting social distance measures to keep them safe.</p>
+
+
+
+<p>That said, the modern virtual classroom experience is far from frictionless. Many obstacles, such as audio nuisance or network issues, can still get in the way of an engaging experience and prevent students from learning. It’s no wonder <a href="https://tophat.com/wp-content/uploads/TopHat_StudentSurvey_P2.pdf?mkt_tok=eyJpIjoiTmpFd09EaGhORGt4TVRSaCIsInQiOiJZdERhWm4wRWZYS240RWFCU1B3SHloTEkrUUtcL3laWHRNXC9MYnp3d0dNVEVaTU55dFZVbWI3TURQUEpkdjlCdTg0TTBjTGJSM2RpN1g3SEtSOVFvQVlEWFwvSW10SHdUN2FEaW5SU1JrQXpzWjZUXC96aUFGaisyT003U0JKbDJCbUoifQ%3D%3D">over 60% of students</a> don’t believe that virtual courses are as effective as traditional in-person classrooms.</p>
+
+
+
+<p>To build the best educational web conferencing platform for students and teachers, you must implement features that optimize student engagement, participation, and communication. That way, student users of your tool can get the most out of their online education.<br><br>Here’s how you can optimize the remote learning experience into your education platform with Dolby.io’s APIs:</p>
+
+
+
+<h2 id="h-reduce-background-noise-and-unwanted-sounds"><strong>Reduce Background Noise and Unwanted Sounds</strong></h2>
+
+
+
+<p>Students often report having a hard time paying attention in virtual classrooms. According to a survey conducted by<a href="https://ir.mit.edu/"> MIT Institutional Research</a>, <a href="https://static1.squarespace.com/static/5b63672bcef372eea958d8a5/t/5ed94dd940762d5e780aca89/1591299545649/Remote+Experience+Survey+2020SP+Highlights-PUBLIC.pdf">79% of students</a> say they’re unable to focus as well during online classes as they are in person. One of the reasons for this is <a href="https://dolby.io/blog/how-to-remove-background-noise-from-video-and-communicate-better-as-a-team/">background noise</a> and distracting sounds during the video conferencing call that make them lose focus.</p>
+
+
+
+<p>Let’s say a teacher is explaining a challenging concept in their online biology class to students, but there’s noise coming from their kids playing and dogs barking in the background that distracts the students. To make up for the sound, they can try to speak louder and repeat themselves, but it could lead to an unpleasant virtual learning experience.<br><br>To prevent background noise from affecting the online classroom, Dolby.io’s <a href="https://dolby.io/products/voice-call/">Voice Call</a> APIs come with noise suppression technology to eliminate unwanted sounds and maintain a high level of communication. By integrating these features within your platform, you’ll help improve the students’ focus and ensure they can hear every single word from their teacher correctly.</p>
+
+
+
+<p>Check out the demo video below to get a sneak peek of Dolby.io’s background noise reduction capabilities. It showcases how three people during a web conference call can communicate effectively even with various forms of nuisances in the background:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://dolby.io/wp-content/uploads/2022/02/image-1024x500-1.png" alt=""/></figure>
+
+
+
+<p><a href="https://www.youtube.com/watch?v=RJyVJZv1ZGQ&amp;t=48s"><em><u>Video Source</u></em></a></p>
+
+
+
+<h2 id="h-provide-network-resilience-to-students"><strong>Provide Network Resilience to Students</strong></h2>
+
+
+
+<p>Another challenge that can get in the way of an engaging virtual classroom training experience is network issues. Over<a href="https://e4e.org/sites/default/files/voices_from_the_virtual_classroom_2020.pdf"> 76% of teachers</a> believe that lack of access to high-speed internet is an obstacle to effective distance learning.</p>
+
+
+
+<p>Network issues are a big problem for teachers and students because they create a glitchy online learning experience and cause classes to be canceled, which then need to be rescheduled. As a result, everyone gets behind in the curriculum, which slows down student progress.<br><br>It’s worth noting as well that some students <a href="https://www.edutopia.org/article/rural-and-urban-communities-kids-still-cant-get-online">in lower-income families or underprivileged areas</a> may also not have access to a high-quality internet connection, preventing them from learning effectively. It sets them back behind their classmates and creates an unequal virtual classroom environment.<br><br>To manage these challenges, <a href="https://Dolby.io">Dolby </a>has reliable network resilience capabilities to maintain good communication between users, even when the network conditions are not the best. It ensures that the teacher’s class doesn’t take longer than expected because of a poor connection and that a student&#8217;s internet connection doesn’t define the quality of their education.</p>
+
+
+
+<h2 id="h-include-course-recording-and-file-sharing"><strong>Include Course Recording and File Sharing</strong></h2>
+
+
+
+<p>Course recording allows teachers to record their virtual classes and share it with learners, so pupils can go back to the session and review anything they didn’t understand the first time. It helps make their studying more effective, review the material at their own pace, and prevents them from getting behind in class.</p>
+
+
+
+<p>As part of the Dolby.io API suite, you can integrate<a href="https://dolby.io/products/call-recording/"><span style="text-decoration: underline;"> </span>Call Recording</a> as part of your platform, making it possible to convert virtual classroom sessions into recorded calls that teachers can then share with students. Teachers can also decide to upload their recorded virtual classrooms on video-sharing platforms for others to see.</p>
+
+
+
+<p>For a better learning experience, teachers also need access to file-sharing and screen-sharing features to share important documents with their virtual classrooms. Aside from Call Recording, Dolby.io’s APIs come with screen-sharing and file-presentation capabilities, so teachers can easily share their education materials with students in real-time.</p>
+
+
+
+<h2 id="h-integrate-real-time-chat-messaging"><strong>Integrate Real-Time Chat Messaging</strong></h2>
+
+
+
+<p>Since the teacher isn’t physically there with students during virtual classrooms, it’s more difficult for pupils to get feedback and ask questions. Chat messaging allows students to ask their teachers questions directly during their online courses and share the answers with others.</p>
+
+
+
+<p>Dolby.io’s APIs include an <a href="https://dolby.io/products/messaging/">integration</a> with chat API company <a href="https://getstream.io">Stream</a> to eliminate the complexity of building an instant-chat messaging feature for your platform. Some of the key chat features that come with the integration are thread replies, message reactions, and real-time notifications, so teachers remain alert each time they get a new message from students.<br><br>As their product was starting to scale, virtual education platform <a href="https://kiddom.co">Kiddom</a>’s priorities were incorporating high-quality audio and video while also adding a live chat feature. The problem, however, was that building these components in-house would have been too challenging and time-consuming for their engineering team.<br><br>While searching for solutions, they first explored Dolby.io’s platform to incorporate better video and audio. From there, the partnership with Stream is what led them to include a real-time, reliable chat messaging feature in their education platform in less than one month. “Communication is a big area where I think Stream has helped us by allowing us to incorporate chat and announcements,” says <a href="https://getstream.io/blog/kiddom-case-study/">Jennifer Levanduski</a>, head of marketing at Kiddom.</p>
+
+
+
+<p>In terms of how easy it was to integrate chat with Stream, here’s what the head of product at Kiddom <a href="https://getstream.io/blog/kiddom-case-study/">Nick Chen </a>had to say: “Generally, the integration went well — I think it was pretty straightforward. There was a little back and forth between our team and Stream’s team, and the support has gone well.”</p>
+
+
+
+<p>You can learn more about the online learning platform’s success by reading their <a href="https://getstream.io/blog/kiddom-case-study/">case study</a>.</p>
+
+
+
+<h2 id="h-deliver-the-best-virtual-classrooms-and-improve-remote-learning-with-dolby-io"><strong>Deliver the Best Virtual Classrooms and Improve Remote Learning with</strong><a href="https://dolby.io"><strong> <u>Dolby.io</u></strong></a></h2>
+
+
+
+<p>Having the right features in your virtual classroom platform allows students and teachers to get the most out of each class. As a result, students get a quality remote learning environment regardless of where they are, and you’ll boost the user satisfaction of your virtual classroom solution.<br><br>To learn more about how Dolby.io can optimize the virtual classroom experience, check out our <a href="https://docs.dolby.io/communications-apis/docs/classroom-with-teacher-controls-web-app">Classroom Example Project</a>, where we create a completely custom virtual classroom experience with Firebase. We showcase features such as screen sharing, moderator controls, and role-based layouts.<br><br><a href="https://auth.dolby.io/realms/Dolby.io/protocol/openid-connect/registrations?client_id=dolby-io-website&amp;redirect_uri=https%3A%2F%2Fdashboard.dolby.io%2Fenrollment&amp;state=f143300f-bc82-4cf9-adce-dab96ca54318&amp;response_mode=fragment&amp;response_type=code&amp;scope=openid&amp;nonce=03990796-4148-4841-b27a-e0ddc9ec8ef8">Get started with Dolby.io today and get access to our premium communication APIs.</a></p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/4-ways-that-dolby-io-improves-virtual-classrooms/">4 Ways That Dolby.io Improves Virtual Classrooms</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Dolby.io + Millicast help developers bring real world closer to metaverse @ SXSW</title>
+		<link>https://dolby.io/blog/dolby-millicast-help-developers-bring-real-world-closer-to-metaverse-sxsw/</link>
+		
+		<dc:creator><![CDATA[Trak Lord]]></dc:creator>
+		<pubDate>Fri, 11 Mar 2022 14:05:00 +0000</pubDate>
+				<category><![CDATA[Product]]></category>
+		<category><![CDATA[metaverse]]></category>
+		<category><![CDATA[millicast]]></category>
+		<category><![CDATA[odyssey]]></category>
+		<category><![CDATA[sxsw]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5393</guid>
+
+					<description><![CDATA[<p>Stop by in Austin at South by Southwest 2022 to see and hear the metaverse for yourself</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/dolby-millicast-help-developers-bring-real-world-closer-to-metaverse-sxsw/">Dolby.io + Millicast help developers bring real world closer to metaverse @ SXSW</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>We&#8217;re welcoming developers, musicians, and media industry professionals to the Dolby.io and Millicast booth at the 2022 South by Southwest (SXSW), an Austin, TX conference and festival that celebrates the convergence of tech, film, music, education and culture.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="908" height="574" src="https://dolby.io/wp-content/uploads/2022/03/odyssey-dolby.io-demo.png" alt="" class="wp-image-5395" srcset="https://dolby.io/wp-content/uploads/2022/03/odyssey-dolby.io-demo.png 908w, https://dolby.io/wp-content/uploads/2022/03/odyssey-dolby.io-demo-300x190.png 300w, https://dolby.io/wp-content/uploads/2022/03/odyssey-dolby.io-demo-768x485.png 768w" sizes="(max-width: 908px) 100vw, 908px" /><figcaption>Sneak peak at the metaverse experience from Dolby.io and <a href="https://www.odyssey.stream/" target="_blank" rel="noreferrer noopener">Odyssey</a></figcaption></figure>
+
+
+
+<p>Since launch, the Dolby.io mission remains to empower developers with the tools they need to build high fidelity, interactive, and immersive audiovisual experiences through powerful and easily-accessible APIs. </p>
+
+
+
+<p>With the recent addition of the ultra-low-delay streaming capabilities thanks to the recent Dolby acquisition of Millicast, we&#8217;re removing barriers for creators looking to merge the virtual and real worlds, to synchronize an experience for global audiences of nearly any size, almost as if they were all right there next to each other, in the same room. </p>
+
+
+
+<p>That&#8217;s why we&#8217;re at SXSW 2022, to showcase how these technologies working together can bring about new applications for virtual events, virtual performances, gaming, or even telemedicine. </p>
+
+
+
+<p>Pictured above you can see a still from a great collaboration we put together with Odyssey, a trailblazer in the metaverse focused on delivering memorable branded experiences. </p>
+
+
+
+<p>Also at our booth, you can check out the Oasis experience, powered by Dolby.io Music Mastering APIs: </p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="830" data-id="5396"  src="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1-1024x830.png" alt="" class="wp-image-5396" srcset="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1-1024x830.png 1024w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1-300x243.png 300w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1-768x623.png 768w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1-1536x1245.png 1536w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Demo-1.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="714" height="710" data-id="5397"  src="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-2.png" alt="" class="wp-image-5397" srcset="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-2.png 714w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-2-300x298.png 300w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-2-150x150.png 150w" sizes="(max-width: 714px) 100vw, 714px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="819" data-id="5398"  src="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3-1024x819.png" alt="" class="wp-image-5398" srcset="https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3-1024x819.png 1024w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3-300x240.png 300w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3-768x614.png 768w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3-1536x1228.png 1536w, https://dolby.io/wp-content/uploads/2022/03/Oasis-Metaverse-Dolby.io-Demo-3.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+</figure>
+
+
+
+<p>If you&#8217;re in Austin, stop by and see &#8211; and hear &#8211; for yourself. We&#8217;ll be located at the JW Marriott, Level 4, from March 11-15. And if you&#8217;d like to start building today, sign up for a free account at <a href="https://dolby.io">https://dolby.io</a></p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/dolby-millicast-help-developers-bring-real-world-closer-to-metaverse-sxsw/">Dolby.io + Millicast help developers bring real world closer to metaverse @ SXSW</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How Picslo’s Walkie Talkie App used the Dolby.io Voice Call API to Scale to 20 Million Downloads</title>
+		<link>https://dolby.io/blog/how-picslos-walkie-talkie-app-used-the-dolby-io-voice-call-api-to-scale-to-20-million-downloads/</link>
+		
+		<dc:creator><![CDATA[Jonathan Calkins]]></dc:creator>
+		<pubDate>Tue, 08 Mar 2022 15:19:40 +0000</pubDate>
+				<category><![CDATA[Case studies]]></category>
+		<category><![CDATA[Communications]]></category>
+		<category><![CDATA[case-study]]></category>
+		<category><![CDATA[voice-call]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5256</guid>
+
+					<description><![CDATA[<p>Dolby.io Voice Call API powers natural-sounding conversations for Walkie-Talkie users across four continents.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/how-picslos-walkie-talkie-app-used-the-dolby-io-voice-call-api-to-scale-to-20-million-downloads/">How Picslo’s Walkie Talkie App used the Dolby.io Voice Call API to Scale to 20 Million Downloads</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Dolby.io Voice Call API powers natural-sounding conversations for Walkie-Talkie users across four continents.</p>
+
+
+
+<h2 id="h-about-picslo">ABOUT PICSLO</h2>
+
+
+
+<p>Picslo Corp is the maker of the Walkie-Talkie app, a B2C social audio platform targeting Gen Z.</p>
+
+
+
+<p>While many social media platforms promote short-form video content or visual media to keep users engaged, Walkie-Talkie takes a different approach. It offers one of the world’s most interactive voice-only social experiences. Walkie-Talkie hosts multiple chat rooms, or “frequencies,” where you can talk with people from around the world. You can also create secure private frequencies to converse with friends knowing your data is safe.&nbsp;</p>
+
+
+
+<p>Walkie-Talkie proves the demand for audio-first social platforms with over 23 million downloads and 2 million monthly active users.</p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>“We recognized that a growing subset of people in the Generation Z demographic rejects traditional forms of social media. They don’t like being forced to use video filters or change how they look just to feel included online. We saw an opportunity to give these people a voice and a place to congregate and share ideas &#8211; we thought a voice-based communications platform was the best way to do this.”</em></p><cite>Stephane Giraudie &#8211; CEO at Picslo Corp.</cite></blockquote>
+
+
+
+<h2>SCALABLE NATURAL-SOUNDING CONVERSATIONS</h2>
+
+
+
+<p>The team at Picslo knew that if they wanted to be successful in launching an audio-only product, they needed to focus on sound quality. Good sound quality means you can make out every word in a conversation and feel the mood elicited by how a word is enunciated. For example, what tone is the speaker using when they talk? At what volume and speed do they communicate? Accurately recording and transmitting these subtleties impacts the listening experience, influencing user engagement. Picslo needed a voice solution that not only captured the natural sound of a face-to-face conversation but also scaled quickly enough to support multiple users entering and exiting chat room frequencies. Picslo knew the Walkie-Talkie app could overload servers but was confident that <a href="https://dolby.io/products/voice-call/">Dolby.io’s Voice Call API</a> was up to the challenge.</p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>“We wanted a partner that could give us world-class audio quality. There really are only a handful of companies that can do that, and the market leader in sound expertise is unquestionably Dolby. The team at Dolby.io has been instrumental in helping us scale, and their Communications API roadmap is probably among the most exciting in the industry &#8211; we can definitely leverage it to offer new features and experiences to Walkie-Talkie users as we grow.”</em></p><cite> Stephane Giraudie, CEO at Picslo Corp. </cite></blockquote>
+
+
+
+<h2>PRODUCTS USED</h2>
+
+
+
+<p><a href="https://dolby.io/products/voice-call/" target="_blank" rel="noreferrer noopener">Dolby.io Voice Call API</a></p>
+
+
+
+<h2>A voice solution that captures everything you need to hear</h2>
+
+
+
+<p>The <a href="https://dolby.io/products/voice-call/" target="_blank" rel="noreferrer noopener">Dolby.io Voice Call API</a> lets Walkie-Talkie users share ideas and talk in real-time from more than 100 countries around the world. Not only does it provide industry-leading voice call audio quality, but it also scales quickly enough to support Walkie-Talkie’s unique use case where users can quickly join and leave chat room frequencies without disrupting platform stability. &nbsp;The Voice Call API is a core product within the <a href="https://docs.dolby.io/communications-apis/docs" target="_blank" rel="noreferrer noopener">Dolby.io Communication APIs</a> portfolio.</p>
+
+
+
+<p>The Walkie-Talkie app allows you to communicate quickly and easily with your friends. Go to the same radio frequency, push to talk and that&#8217;s it! <a href="https://walkie-talkie.io/" target="_blank" rel="noreferrer noopener">Learn more.</a> </p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/how-picslos-walkie-talkie-app-used-the-dolby-io-voice-call-api-to-scale-to-20-million-downloads/">How Picslo’s Walkie Talkie App used the Dolby.io Voice Call API to Scale to 20 Million Downloads</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Exploring Enhance Parameters on How They Affect Audio Quality</title>
+		<link>https://dolby.io/blog/exploring-enhance-parameters-on-how-they-affect-audio-quality/</link>
+		
+		<dc:creator><![CDATA[Kinga Leśniak]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2022 18:01:00 +0000</pubDate>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[enhance]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://dolby.io/?p=5157</guid>
+
+					<description><![CDATA[<p>A post outlining how different parameters to the Media Enhance API affect audio quality from an analytical level.</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/exploring-enhance-parameters-on-how-they-affect-audio-quality/">Exploring Enhance Parameters on How They Affect Audio Quality</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Dolby.io&nbsp;<a href="https://docs.dolby.io/media-apis/reference/media-enhance-post">Enhance API</a>&nbsp;has options to improve your audio in terms of loudness, noise reduction, dealing with unwanted frequencies,&nbsp;adjusting profile of audio.&nbsp;All of these&nbsp;options can help you&nbsp;make the best of your recording,&nbsp;whether&nbsp;it comes from the mobile phone conversation, the video call made using&nbsp;laptop microphone, or recording from microphone placed in the conference room.&nbsp;</p>
+
+
+
+<p>Dolby.io enables you to apply many settings / presets at once. However, for experimental reasons, let’s take a look at the processing chain, where the recording&nbsp;from the laptop&nbsp;microphone will be&nbsp;processed in 3 steps. We will observe, which&nbsp;characteristics of audio signal are affected by different options and which settings work best for our case.</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Workflow">Workflow</h2>
+
+
+
+<p>We will take the original signal and process it step by step with different enhancing parameters. For each parameter we will use and compare 2-3 options or levels.&nbsp;An example enhance function will look like the following:</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">def enhance_media(input, output, params, headers):
+    # Set Enhance API URL
+    url = &quot;https://api.dolby.com/media/enhance&quot;
+    body = {
+        &quot;input&quot;: input,
+        &quot;output&quot;: output
+    }
+ 
+    body.update(params)
+    response = requests.request(&quot;POST&quot;, url, json=body, headers=headers)
+ 
+    print(&#039;{} processed to: {}&#039;.format(input, output))
+    print(response.text)
+    return output</code></pre>
+
+
+
+<p>After each step we will take a look at a new signal’s waveform and spectrogram, interpret results and compare with the others. The code for spectrogram and waveform plot can be found here:</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">def plot_a_waveform_and_spectrum(wave_file, title=None):
+    # Create a figure object to make two plots
+    fig = plt.figure(1)
+    if title:
+        fig.suptitle(title)
+ 
+    # Plot a waveform of wav_file
+    plot_waveform = plt.subplot(211)
+    sample_rate, data = wavfile.read(wave_file)
+    duration = len(data) / sample_rate
+    time_data = np.linspace(0, duration, len(data))
+ 
+    plot_waveform.plot(time_data, data)
+    plot_waveform.set_xlabel(&#039;Time&#039;)
+    plot_waveform.set_ylabel(&#039;Amplitude&#039;)
+    ax = plt.gca()
+    ax.set_xlim([0, 5])
+ 
+    # Calculate and create a spectogram plot
+    plot_spectrogram = plt.subplot(212)
+    plot_spectrogram.specgram(data[:], Fs=sample_rate, NFFT=1024, noverlap=900)
+    plot_spectrogram.set_xlabel(&#039;Time&#039;)
+    plot_spectrogram.set_ylabel(&#039;Frequency&#039;)
+    ax = plt.gca()
+    ax.set_xlim([0, 5])
+ 
+    fig.tight_layout()
+    plt.savefig(&#039;{}.png&#039;.format(wave_file))</code></pre>
+
+
+
+<p>Then, the best signal will be used in the next step. It will be chosen&nbsp;based&nbsp;on our&nbsp;hearing capabilities and metrics shown on plots.&nbsp;</p>
+
+
+
+<p>Audio parameters used in this article are described on&nbsp;<a href="https://docs.dolby.io/media-apis/reference/media-enhance-post">Dolby.io Enhance API page.</a>&nbsp;</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Originalsignal">Original signal</h2>
+
+
+
+<p>The input audio signal is a famous English tongue-twister “She sells seashells by the seashore”. It was recorded on&nbsp;a laptop, sitting by&nbsp;a&nbsp;desk &#8211; this is a common environment that is&nbsp;used to make a video calls while working remotely. The tone and loudness of voice is that of a&nbsp;video call as well. Here you can listen to the original audio:</p>
+
+
+
+<figure class="wp-block-audio"><audio controls src="https://dolby.io/wp-content/uploads/2022/02/seashells.wav"></audio><figcaption><meta charset="utf-8"><strong>ORIGINAL AUDIO &#8211; seashells.wav</strong></figcaption></figure>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Step1-CONTENTEnhancing.">Step 1 &#8211; CONTENT Enhancing</h2>
+
+
+
+<p>The first thing we&#8217;ll try to do in this section is to try to&nbsp;enhance our original&nbsp;signal&nbsp;using the content&nbsp;parameter. This parameter enables us to enhance audio depending&nbsp;on the distance from the microphone&nbsp;to the speaker, as well as&nbsp;the kind of recorded content. &nbsp;For our purposes, I decided to compare &#8220;conference&#8221; and &#8220;meeting&#8221; modes.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from config import *
+import utils
+ 
+# Upload local input file which we want to enhance
+initial_input_file = utils.upload_input_file(input_file_local, input_file_base, headers)
+ 
+# Part 1: &quot;Content&quot; parameter
+print(&#039;\n\n\nEnhancing Part 1 - &quot;Content&quot; parameter\n&#039;)
+ 
+# OPTION 1 - &quot;conference&quot;
+output_content_conference = &#039;CONTENT_conference.mp4&#039;
+param_content_conference = {&quot;content&quot;: {&quot;type&quot;: &quot;conference&quot;}}
+ 
+utils.enhance_download_analyze(initial_input_file,
+                               output_content_conference,
+                               output_file_base,
+                               output_local_file_base,
+                               param_content_conference,
+                               headers,
+                               output_content_conference)
+ 
+# OPTION 2 - &quot;meeting&quot;
+output_content_meeting = &#039;CONTENT_meeting.mp4&#039;
+param_content_meeting = {&quot;content&quot;: {&quot;type&quot;: &quot;meeting&quot;}}
+utils.enhance_download_analyze(initial_input_file,
+                               output_content_meeting,
+                               output_file_base,
+                               output_local_file_base,
+                               param_content_meeting,
+                               headers,
+                               output_content_mee</code></pre>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/CONTENT_conference.wav.png" alt="" class="wp-image-5160" srcset="https://dolby.io/wp-content/uploads/2022/02/CONTENT_conference.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/CONTENT_conference.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>better signal &#8211;&nbsp;Conference&nbsp;&#8211; recording</strong></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/CONTENT_meeting.wav.png" alt="" class="wp-image-5161" srcset="https://dolby.io/wp-content/uploads/2022/02/CONTENT_meeting.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/CONTENT_meeting.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>worse signal &#8211;&nbsp;Meeting &#8211; recording</strong></figcaption></figure>
+
+
+
+<p>As we can observe on these plots, the waveforms don&#8217;t differ very much in case of both signals &#8211; that means that the energy of recording is really similar. &nbsp;This is probably because a&nbsp;laptop microphone creates an environment which is something in&nbsp;between a conference and a meeting (it is not&nbsp;too&nbsp;close to the speaker as microphone located in headphones, however it is not very distant).</p>
+
+
+
+<p>In both cases we can hear that the voice is enhanced and we can hear it clearly.&nbsp;</p>
+
+
+
+<p>However spectrograms&nbsp;show a slight&nbsp;difference between energy in frequencies present when the speaker is silent. That means that both parameters can&nbsp;extract a human&#8217;s&nbsp;voice&nbsp;from&nbsp;the&nbsp;whole recording and adjust the volume of background noises.</p>
+
+
+
+<p>After listening to both output files, we think that the &#8220;Conference&#8221; is sligthly better. We will use it as an input to the step 2.&nbsp;</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Step2-NOISEparameter">Step 2 &#8211; NOISE parameter</h2>
+
+
+
+<p>In this section we will try get rid of noise generated by a built-in&nbsp;laptop microphone. We will try to compare two sizes of this parameter and decide which result is better in case of output signal.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">
+from config import *
+import utils
+ 
+# Part 2: &quot;Audio NOISE&quot; parameter
+print(&#039;\n\n\nEnhancing Part 2 - &quot;Audio NOISE&quot; parameter\n&#039;)
+ 
+# Set this variable to chosen file from Part 1
+output_after_step_1 = &#039;CONTENT_conference.mp4&#039;  # TODO: set to choosen signal&#039;s path
+best_after_step_1 = &#039;{}/{}&#039;.format(output_file_base, output_after_step_1)
+ 
+# OPTION 1 - amount: low
+output_noise_low = &#039;NOISE_low.mp4&#039;
+param_noise_low = {&quot;audio&quot;: {&quot;noise&quot;: {&quot;reduction&quot;: {
+    &quot;enable&quot;: True,
+    &quot;amount&quot;: &quot;low&quot;
+}
+}
+}}
+ 
+utils.enhance_download_analyze(best_after_step_1,
+                               output_noise_low,
+                               output_file_base,
+                               output_local_file_base,
+                               param_noise_low,
+                               headers,
+                               output_noise_low)
+ 
+# OPTION 2 - amount: high
+output_noise_high = &#039;NOISE_high.mp4&#039;
+param_noise_high = {&quot;audio&quot;: {
+    &quot;noise&quot;: {&quot;reduction&quot;: {
+        &quot;enable&quot;: True,
+        &quot;amount&quot;: &quot;high&quot;
+    }
+    }
+}}
+ 
+utils.enhance_download_analyze(best_after_step_1,
+                               output_noise_high,
+                               output_file_base,
+                               output_local_file_base,
+                               param_noise_high,
+                               headers,
+                               output_noise_high)</code></pre>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/NOISE_low.wav.png" alt="" class="wp-image-5162" srcset="https://dolby.io/wp-content/uploads/2022/02/NOISE_low.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/NOISE_low.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>worse signal &#8211;&nbsp;Noise low</strong></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/NOISE_high.wav-1.png" alt="" class="wp-image-5164" srcset="https://dolby.io/wp-content/uploads/2022/02/NOISE_high.wav-1.png 640w, https://dolby.io/wp-content/uploads/2022/02/NOISE_high.wav-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>better signal &#8211;&nbsp;Noise high</strong></figcaption></figure>
+
+
+
+<p>As we can see on the plots, differences are quite visible. Especially spectrograms show that the higher level of noise reduction results in eliminating some frequencies from the signal. It shows us that the algorithm works and it really enables us to lower the power of unwanted frequencies.</p>
+
+
+
+<p>After listening to both output files, we think that the &#8220;Noise high&#8221; is sligthly better and more clear for listeners. On the waveform we can observe that&nbsp;especially&nbsp;in the beginning of voice recording, the noise is detected and the part of signal is reduced. We will use it as an input to the step 3.&nbsp;</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Step3-SPEECHparameter">Step 3 &#8211; SPEECH parameter</h2>
+
+
+
+<p>In this last section we will try to adjust some speech parameters, which are linked to irritating sounds made by sounds like &#8220;p&#8221;, &#8220;sh&#8221;, or sounds produced by mouth before and after opening it. We will try to compare 3 types of&nbsp;parameters&nbsp;and compare what result they have&nbsp;on our signal chosen from the previous step.</p>
+
+
+
+<pre class="wp-block-prismatic-blocks"><code class="language-python">from config import *
+import utils
+ 
+# Part 3: &quot;Audio SPEECH&quot; parameter
+print(&#039;\n\n\nEnhancing Part 3 - &quot;Audio SPEECH&quot; parameter\n&#039;)
+ 
+# It doesn&#039;t need so much noise reduction
+output_after_step_2 = &#039;NOISE_high.mp4&#039;  # TODO: set to choosen signal&#039;s path
+best_after_step_2 = &#039;{}/{}&#039;.format(output_file_base, output_after_step_2)
+ 
+# OPTION 1 - speech: sibilance
+output_speech_sibilance = &#039;SPEECH_sibilance.mp4&#039;
+param_speech_sibilance = {&quot;audio&quot;: {
+    &quot;speech&quot;: {
+        &quot;sibilance&quot;: {&quot;reduction&quot;: {
+            &quot;enable&quot;: True,
+            &quot;amount&quot;: &quot;high&quot;}
+        }}}}
+ 
+utils.enhance_download_analyze(best_after_step_2,
+                               output_speech_sibilance,
+                               output_file_base,
+                               output_local_file_base,
+                               param_speech_sibilance,
+                               headers,
+                               output_speech_sibilance)
+ 
+# OPTION 2 - speech: plosive
+output_speech_plosive = &#039;SPEECH_plosive.mp4&#039;
+param_speech_plosive = {&quot;audio&quot;: {
+    &quot;speech&quot;: {
+        &quot;plosive&quot;: {&quot;reduction&quot;: {
+            &quot;enable&quot;: True,
+            &quot;amount&quot;: &quot;high&quot;}
+        }}}}
+ 
+utils.enhance_download_analyze(best_after_step_2,
+                               output_speech_plosive,
+                               output_file_base,
+                               output_local_file_base,
+                               param_speech_plosive,
+                               headers,
+                               output_speech_plosive)
+ 
+# OPTION 3 - speech: click
+output_speech_click = &#039;SPEECH_click.mp4&#039;
+param_speech_click = {&quot;audio&quot;: {
+    &quot;speech&quot;: {
+        &quot;click&quot;: {&quot;reduction&quot;: {
+            &quot;enable&quot;: True,
+            &quot;amount&quot;: &quot;high&quot;}
+        }}}}
+ 
+utils.enhance_download_analyze(best_after_step_2,
+                               output_speech_click,
+                               output_file_base,
+                               output_local_file_base,
+                               param_speech_click,
+                               headers,
+                               output_speech_click)</code></pre>
+
+
+
+<p>As we can see on the plots, differences are almost invisible. Comparing to previous steps, the voice was almost untouched and spectrogram only lost some data about frequencies where the voice is silent.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/SPEECH_sibilance.wav.png" alt="" class="wp-image-5165" srcset="https://dolby.io/wp-content/uploads/2022/02/SPEECH_sibilance.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/SPEECH_sibilance.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>Speech &#8211; sibilance</strong></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/SPEECH_plosive.wav.png" alt="" class="wp-image-5166" srcset="https://dolby.io/wp-content/uploads/2022/02/SPEECH_plosive.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/SPEECH_plosive.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>Speech &#8211; plosive</strong></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="640" height="480" src="https://dolby.io/wp-content/uploads/2022/02/SPEECH_click.wav.png" alt="" class="wp-image-5167" srcset="https://dolby.io/wp-content/uploads/2022/02/SPEECH_click.wav.png 640w, https://dolby.io/wp-content/uploads/2022/02/SPEECH_click.wav-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption><meta charset="utf-8"><strong>Speech &#8211; click</strong></figcaption></figure>
+
+
+
+<p>After listening to all output files, we think that the difference is not so significant. The signal has not a lot of problematic sounds, so we don&#8217;t need to be surprised about the results. In case of recordings where the microphone is placed really close to the&nbsp;speaker,&nbsp;harsh sounds are more visible on the plots and reduced after applying parameters.</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Summary">Summary</h2>
+
+
+
+<p>In this little experiment, we were able to observe how different Enhance API parameters affect processed audio files.</p>
+
+
+
+<p>We are also able to compare original input with&nbsp;audio&nbsp;file processed by the Dolby.io&nbsp;Enhance API. We see that the&nbsp;processed&nbsp;file is better in terms of extracting voice from the whole audio file. &nbsp;</p>
+
+
+
+<p>Of course, if we decide which workflow is the best for our case, we can apply all needed parameters at once, without doing 3 separate steps. It enables us to create only one output file and save time, money and memory on our cloud storage provider.&nbsp;</p>
+
+
+
+<p>With this article, you can experiment with your settings and choose different metrics to find the perfect configuration for your audio files.&nbsp;</p>
+
+
+
+<h2 id="ExploringEnhanceParametersonHowTheyAffectAudioQuality-Sourcecode,description">Source code</h2>
+
+
+
+<p>Source code, plots and signals can be found on GitHub: https://github.com/dolbyio-samples/blog-enhance-parameters-audio-quality</p>
+<p>The post <a rel="nofollow" href="https://dolby.io/blog/exploring-enhance-parameters-on-how-they-affect-audio-quality/">Exploring Enhance Parameters on How They Affect Audio Quality</a> appeared first on <a rel="nofollow" href="https://dolby.io">Dolby.io</a>.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://dolby.io/wp-content/uploads/2022/02/seashells.wav" length="1635104" type="audio/wav" />
+
+			</item>
+	</channel>
+</rss>

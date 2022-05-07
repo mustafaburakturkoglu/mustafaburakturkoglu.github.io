@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ekmukta/v23/mem6YaCmzCuv3KJUDI7dU60Zdcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ekmukta/v23/mem6YaCmzCuv3KJUDI61VK0Zdcg.ttf) format('truetype');
+}

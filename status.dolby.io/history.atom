@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:status.dolby.io,2005:/history</id>
+  <link rel="alternate" type="text/html" href="https://status.dolby.io"/>
+  <link rel="self" type="application/atom+xml" href="https://status.dolby.io/history.atom"/>
+  <title>Dolby.io Status - Incident History</title>
+  <updated>2022-04-26T11:26:20Z</updated>
+  <author>
+    <name>Dolby.io</name>
+  </author>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9683778</id>
+    <published>2022-04-02T08:07:18Z</published>
+    <updated>2022-04-02T08:07:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/msvvnmlp8vzr"/>
+    <title>Experiencing lag on Monitor API</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt; 2&lt;/var&gt;, &lt;var data-var='time'&gt;08:07&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt; 1&lt;/var&gt;, &lt;var data-var='time'&gt;09:45&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented, we are monitoring the issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt; 1&lt;/var&gt;, &lt;var data-var='time'&gt;08:20&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are experiencing some latency on our Monitoring API since around 08:20 UTC&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9508536</id>
+    <published>2022-03-10T18:17:59Z</published>
+    <updated>2022-03-10T18:17:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/n94f3wp76l2s"/>
+    <title>Missing Data in Monitoring API</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;18:17&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - Everything is operational.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;13:12&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - Between 12:02 and 12:15 UTC, some misconfiguration caused some recording metadata missing from monitor API in prod US / EU regions. &lt;br /&gt;No data are lost. We are re-processing the missing data.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9286356</id>
+    <published>2022-02-13T05:00:30Z</published>
+    <updated>2022-02-13T05:00:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/tf244mkzfg01"/>
+    <title>Dolby.io dashboard authentication service</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Feb &lt;var data-var='date'&gt;13&lt;/var&gt;, &lt;var data-var='time'&gt;05:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Feb &lt;var data-var='date'&gt;13&lt;/var&gt;, &lt;var data-var='time'&gt;03:02&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Feb &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;21:08&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - During this scheduled maintenance window following services will be impacted:&lt;br /&gt;&lt;br /&gt;- Dolby.io dashboard (including login and new signup)&lt;br /&gt;&lt;br /&gt;There will be no impact on product API services, and customers' applications will continue to work.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9273456</id>
+    <published>2022-02-09T10:30:00Z</published>
+    <updated>2022-02-09T11:10:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/4bl7dhmt5pbn"/>
+    <title>Not able to create conferences</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Feb &lt;var data-var='date'&gt; 9&lt;/var&gt;, &lt;var data-var='time'&gt;10:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - During a software update, manual misconfiguration lands into not being able to create any conference on the platform. This issue happened from 10:42 AM UTC  to 11:01 AM UTC&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9139773</id>
+    <published>2022-01-25T07:00:30Z</published>
+    <updated>2022-01-25T07:00:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/3js74hds299s"/>
+    <title>Dolby.io billing system migration</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;25&lt;/var&gt;, &lt;var data-var='time'&gt;07:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;25&lt;/var&gt;, &lt;var data-var='time'&gt;01:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;01:37&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - During this scheduled maintenance window following services will be impacted: &lt;br /&gt;&lt;br /&gt;- Dolby.io dashboard (including login and new signup) &lt;br /&gt;&lt;br /&gt;There will be no impact on product API services, and customers' applications will continue to work.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/9139739</id>
+    <published>2022-01-22T16:54:19Z</published>
+    <updated>2022-01-22T16:54:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/93fpgqyw70vz"/>
+    <title>Canada Datacenter websocket failures</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;16:54&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;11:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to monitor for any further issues.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;11:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;02:56&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - Canada traffic is now being routed to the US. Customers using regional media zones for Canada will still see degraded service. Investigation is still ongoing.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;22&lt;/var&gt;, &lt;var data-var='time'&gt;01:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating websocket failures occurring in the Canada datacenter.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8867208</id>
+    <published>2021-12-16T19:30:30Z</published>
+    <updated>2021-12-16T19:30:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/qdg7s8svdcd3"/>
+    <title>Dolby.io dashboard authentication service migration</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;16&lt;/var&gt;, &lt;var data-var='time'&gt;19:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;16&lt;/var&gt;, &lt;var data-var='time'&gt;18:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;16&lt;/var&gt;, &lt;var data-var='time'&gt;17:56&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - During this scheduled maintenance window (expected to be about an hour), login to the dolby.io dashboard will not be available. When trying to log in to the dashboard during the maintenance period, the user will see the maintenance notice page, and currently, logged-in users will be logged out automatically. New users will not be able to signup during the downtime. There will be no impact on API services, and customers' applications will continue to work.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8849241</id>
+    <published>2021-12-16T17:00:39Z</published>
+    <updated>2021-12-16T17:00:40Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/8lmqnm9nwg95"/>
+    <title>Dolby.io dashboard authentication service upgrade</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;16&lt;/var&gt;, &lt;var data-var='time'&gt;17:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;16&lt;/var&gt;, &lt;var data-var='time'&gt;16:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;01:34&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - A maintenance event is scheduled between 16:00 UTC - 17:00 UTC (08:00 PST - 09:00 PST ) on Dec 16, 2021. Actual service interruption during this window is expected to take approximately 30 minutes. &lt;br /&gt;&lt;br /&gt;During this scheduled maintenance window (expected to be about an hour), login to the dolby.io dashboard will not be available. When trying to log in to the dashboard during the maintenance period, the user will see the maintenance notice page, and currently, logged-in users will be logged out automatically. New users will not be able to signup during the downtime. There will be no impact on API services, and customers' applications will continue to work.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8783131</id>
+    <published>2021-12-08T11:42:11Z</published>
+    <updated>2021-12-08T11:42:11Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/mcg0s0gqpdg6"/>
+    <title>AWS service issues degrading mixer service</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt; 8&lt;/var&gt;, &lt;var data-var='time'&gt;11:42&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - AWS service issues in AWS us-east-1 have been resolved and traffic has been restored to US datacenter&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt; 7&lt;/var&gt;, &lt;var data-var='time'&gt;19:07&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - Rerouting is complete and we are closely monitoring the AWS outage. This incident will be updated when traffic is routed back to the US datacenter.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Dec &lt;var data-var='date'&gt; 7&lt;/var&gt;, &lt;var data-var='time'&gt;17:13&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - Due to AWS service issues in aws-us-east-1, customers may see degraded service related to the mixer (recordings and RTMP). We are currently rerouting all mixers from the US datacenter to the Canada datacenter.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8467074</id>
+    <published>2021-11-11T12:29:33Z</published>
+    <updated>2021-11-11T12:29:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/mwv66pjn2vlc"/>
+    <title>Incident on conference creation in EU region</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;11&lt;/var&gt;, &lt;var data-var='time'&gt;12:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;11&lt;/var&gt;, &lt;var data-var='time'&gt;11:28&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - Some other services like REST API have also been impacted and would have reported some SSL error, fixed as well&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;11&lt;/var&gt;, &lt;var data-var='time'&gt;11:11&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - Problem has started around 10:45 UTC and fixed totally around 11:03 UTC.&lt;br /&gt;We are currently monitoring the service and investigating the root cause.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;11&lt;/var&gt;, &lt;var data-var='time'&gt;11:04&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to work on a fix for this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;11&lt;/var&gt;, &lt;var data-var='time'&gt;11:04&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - The issue has been identified and a fix is being implemented.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8437003</id>
+    <published>2021-11-10T05:21:57Z</published>
+    <updated>2021-11-10T05:21:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/1v6ngd04lrkz"/>
+    <title>dashboard outage</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;05:21&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;03:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;03:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;10&lt;/var&gt;, &lt;var data-var='time'&gt;02:53&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating the issue&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/8001409</id>
+    <published>2021-09-15T19:37:15Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/qw6nk4nkgwkp"/>
+    <title>service issues in US and CA datacenters</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Sep &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;19:37&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Sep &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;17:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Sep &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;16:52&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Sep &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;16:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Sep &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;16:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating this issue. Customers using the US or CA datacenters may see 500 errors from the service.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/7762572</id>
+    <published>2021-08-17T18:28:32Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/sc4j194n2cth"/>
+    <title>Issue connecting on iAPI Platform in EU</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Aug &lt;var data-var='date'&gt;17&lt;/var&gt;, &lt;var data-var='time'&gt;18:28&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Aug &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;18:01&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - All EU traffic has been re-routed back to the EU datacenter,  EU traffic operational.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Aug &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;13:52&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - EU traffic routed to US datacenter. EU traffic operational.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Aug &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;13:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating this issue.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/7516064</id>
+    <published>2021-07-17T06:58:17Z</published>
+    <updated>2021-07-17T06:58:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/yvfyykqc0v30"/>
+    <title>Dolby.IO dashboard upgrade</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;17&lt;/var&gt;, &lt;var data-var='time'&gt;06:58&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;17&lt;/var&gt;, &lt;var data-var='time'&gt;05:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;15&lt;/var&gt;, &lt;var data-var='time'&gt;15:19&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - We will be undergoing scheduled maintenance during this time for the Dolby.IO dashboard. Login to the dashboard will be blocked during this time, customer applications will continue to operate.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/7480846</id>
+    <published>2021-07-12T09:45:59Z</published>
+    <updated>2021-07-12T09:45:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/k27w6pb1fd5r"/>
+    <title>Dolby.IO dashboard upgrade</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;09:45&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - Dolby.io Dashboard back to normal.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;08:17&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Verifying&lt;/strong&gt; - Verification is currently underway for maintenance items.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;07:59&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is still in progress and is taking longer than expected. The current expected completion is 9:00am UTC.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;07:50&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We will be undergoing scheduled maintenance during this time.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;07:49&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - Scheduled maintenance is still in progress and is taking longer than expected. The current expected completion is 9:00am UTC.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/7479840</id>
+    <published>2021-07-12T07:40:29Z</published>
+    <updated>2021-07-12T07:40:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/rghkgc1hc59y"/>
+    <title>Dolby.IO dashboard upgrade</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;07:40&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; - The scheduled maintenance has been completed.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;06:39&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - Scheduled maintenance is still in progress and is taking longer than expected. The current expected completion is 9:00am UTC.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;05:34&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;In progress&lt;/strong&gt; - Scheduled maintenance is currently in progress. We will provide updates as necessary.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;05:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We will be undergoing scheduled maintenance during this time.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt;12&lt;/var&gt;, &lt;var data-var='time'&gt;05:31&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Scheduled&lt;/strong&gt; - We will be undergoing scheduled maintenance during this time for the Dolby.IO hdashboard. Login to the dashboard will be blocked during this time, customer applications will continue to operate.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/7436142</id>
+    <published>2021-07-07T18:14:49Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/zwx153kj2tft"/>
+    <title>dolby.io dashboard down</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt; 7&lt;/var&gt;, &lt;var data-var='time'&gt;18:14&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt; 7&lt;/var&gt;, &lt;var data-var='time'&gt;17:25&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - The issue has been identified and a fix is being implemented, ETA within 1 hour.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jul &lt;var data-var='date'&gt; 7&lt;/var&gt;, &lt;var data-var='time'&gt;16:25&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating the issue. The applications are still working, only the access to the dashboard is blocked at the moment.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6863262</id>
+    <published>2021-04-29T03:39:21Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/1cfyw1g48z1j"/>
+    <title>Delays in recording webhooks and MPx file generation</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;29&lt;/var&gt;, &lt;var data-var='time'&gt;03:39&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;28&lt;/var&gt;, &lt;var data-var='time'&gt;22:52&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;28&lt;/var&gt;, &lt;var data-var='time'&gt;20:36&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - root cause identified, recording files are being regenerated.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;28&lt;/var&gt;, &lt;var data-var='time'&gt;14:43&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - Some recording webhooks and MPx file generation are delayed.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6785773</id>
+    <published>2021-04-19T12:59:19Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/rjt4pbcrgc22"/>
+    <title>Configuration update caused some 5xx error responses</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;19&lt;/var&gt;, &lt;var data-var='time'&gt;12:59&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;19&lt;/var&gt;, &lt;var data-var='time'&gt;12:26&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;19&lt;/var&gt;, &lt;var data-var='time'&gt;12:23&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating this issue.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6751838</id>
+    <published>2021-04-14T18:56:34Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/f2xk0hqwp4v2"/>
+    <title>Instabilities observed on US/EU loadbalancers</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;18:56&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;18:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Apr &lt;var data-var='date'&gt;14&lt;/var&gt;, &lt;var data-var='time'&gt;18:22&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - The issue has been identified and a fix is being implemented.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6639925</id>
+    <published>2021-03-30T11:24:12Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/vrgd7bqpq4nr"/>
+    <title>Loadbalancer issue during configuration update in US region</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;30&lt;/var&gt;, &lt;var data-var='time'&gt;11:24&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;30&lt;/var&gt;, &lt;var data-var='time'&gt;08:25&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;30&lt;/var&gt;, &lt;var data-var='time'&gt;08:21&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - The issue has been identified and a fix is being implemented.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6592887</id>
+    <published>2021-03-23T11:24:37Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/dzl6jb37v326"/>
+    <title>Old architecture session incident</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;23&lt;/var&gt;, &lt;var data-var='time'&gt;11:24&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;23&lt;/var&gt;, &lt;var data-var='time'&gt;11:00&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Mar &lt;var data-var='date'&gt;23&lt;/var&gt;, &lt;var data-var='time'&gt;10:54&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - This impacts only the few customers still using old architecture and has no impact on new architecture services.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6126672</id>
+    <published>2021-01-28T15:45:52Z</published>
+    <updated>2021-10-01T09:53:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/xfkpbk4gbh94"/>
+    <title>API failures in APAC regions</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;28&lt;/var&gt;, &lt;var data-var='time'&gt;15:45&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;28&lt;/var&gt;, &lt;var data-var='time'&gt;08:37&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;27&lt;/var&gt;, &lt;var data-var='time'&gt;19:48&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;27&lt;/var&gt;, &lt;var data-var='time'&gt;13:01&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating authentication and call control failures in AU (Australia) and IN (India) data center. End users connecting from those regions may experience connection and call control problems.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/6124608</id>
+    <published>2021-01-27T11:07:48Z</published>
+    <updated>2021-10-01T09:53:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/x673dxf7f1bq"/>
+    <title>Authentication failure in APAC regions</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;27&lt;/var&gt;, &lt;var data-var='time'&gt;11:07&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;27&lt;/var&gt;, &lt;var data-var='time'&gt;07:42&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - The service is operational now, and we are continuing to investigate the issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Jan &lt;var data-var='date'&gt;27&lt;/var&gt;, &lt;var data-var='time'&gt;07:36&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - We are currently investigating authentication failure in AU (Australia) and IN (India) data center.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:status.dolby.io,2005:Incident/5614057</id>
+    <published>2020-11-23T07:38:30Z</published>
+    <updated>2021-10-01T09:53:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://status.dolby.io/incidents/gslnhz19qkk4"/>
+    <title>Problems with mixer service in EU region</title>
+    <content type="html">&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;23&lt;/var&gt;, &lt;var data-var='time'&gt;07:38&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - This incident has been resolved.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;18:12&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Monitoring&lt;/strong&gt; - A fix has been implemented and we are monitoring the results.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;18:12&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;17:48&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;16:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;16:29&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Update&lt;/strong&gt; - We are continuing to investigate this issue.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;14:09&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - Problem seem wider than just mixer service, investigation ongoing&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;13:10&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; - The issues has been identified and a fix has been implemented, the mixer service going back to normal around 13:05 UTC for new mixing requests&lt;/p&gt;&lt;p&gt;&lt;small&gt;Nov &lt;var data-var='date'&gt;20&lt;/var&gt;, &lt;var data-var='time'&gt;12:30&lt;/var&gt; UTC&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Investigating&lt;/strong&gt; - Some application are facing issues with mixer service in EU region (since ~12:30 UTC)&lt;/p&gt;</content>
+  </entry>
+</feed>

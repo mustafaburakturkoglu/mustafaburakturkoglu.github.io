@@ -1,0 +1,196 @@
+ /* Carousel Nav */
+.dev_ai_res_nav {
+    text-align: right;
+    padding:10px 16px 30px;
+    z-index: 2;  
+}
+.dev_ai_res_nav>* {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #434348;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  -webkit-display: inline-flex;
+  -ms-display: inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  letter-spacing: initial;
+  border: none;
+  line-height: 100%;
+}
+.dev_ai_res_nav>*:first-child {
+  margin-right: 8px;
+}
+.dev_ai_res_nav svg {
+  position: relative;
+  height: 18px;
+}
+.dev_ai_res_nav .slick-prev svg {
+  right: 1px;
+}
+.dev_ai_res_nav .slick-next svg {
+  left: 1px;
+}
+.dev_ai_res_nav .slick-arrow {
+  cursor: pointer;
+  outline: none;
+}
+.dev_ai_res_nav .slick-arrow:hover {
+  background: linear-gradient(82.91deg, #3E44FE 0%, #975CFF 100%);
+  border: none;
+}
+.dev_ai_res_nav  button.slick-prev.slick-arrow{
+	background:rgba(177, 133, 255, 0.2);
+}
+.dev_ai_res_nav  button.slick-next.slick-arrow {
+    background: linear-gradient(82.91deg, #3E44FE 0%, #975CFF 100%);
+    border: none; 
+} 
+article.ai_researcher_block.slick-slide {
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding:14px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 2;
+  outline: none;
+}
+article.ai_researcher_block .ai__main_content,
+article.ai_researcher_block .dv_footer {
+  position: relative;
+  z-index: 1;
+}
+.ai_researcher_block:hover .dv_cta {
+    opacity: 1;
+}  
+article.ai_researcher_block .ai__main_content{ 
+    margin-bottom:10px;
+}   
+.dev_ai_res_blocks .dbio-default-button-container {
+    margin-top:60px;
+}
+.dev_ai_res_blocks .dv_eyebrow_headline {
+    margin-bottom: 15px;
+}
+section.dev_ai_res_blocks { 
+	padding-top:35px;  
+	padding-bottom:50px;  
+} 
+.dev_ai_res_blocks .dbio-default-heading-block {
+    margin-bottom:0px; 
+} 
+.dev_ai_res_blocks h2 {
+    color: #fff !important;
+}  
+.ai__main_content.dbio_flex_aic {
+    display: flex;
+}
+.dbio_researchers_img {
+    margin-right:12px;
+}  
+p.dbio_rsai_name {
+    font-weight: bold;
+}
+p.dbio_rsai_title {
+    font-weight: 400;
+}
+.dbio_researchers_content p {
+    color: #fff !important;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.005em; 
+    margin-bottom: 0px;
+	text-align: left;  
+}
+p.dbio_google_scholar {
+    color: #AA33FF !important;
+} 
+p.dbio_rsai_title {
+    color: #B9B9BA !important;
+}
+p.dbio_rsai_title a {
+    display: block;
+}
+p.dbio_rsai_title span {
+    display: none;
+}
+.dbio_researchers_img img {
+    width: 72px;
+    border-radius: 50%;
+    height: 72px;
+    object-fit: cover;
+}
+.dev_ai_res_blocks  .dbio-default-heading-block h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height:53px;
+    text-align: center;
+    letter-spacing: -0.0075em;
+}
+.editor-styles-wrapper .dev_ai_res_blocks {
+    background-color: #14141A;
+}
+.editor-styles-wrapper .dev_ai_res_blocks.force_fullscreen_width{
+    margin: 0px; 
+	font-family: 'avenir-next-regular', sans-serif; 
+}
+.editor-styles-wrapper .dbio_blocks p.dbio_rsai_name {
+    font-weight: bold;
+}
+.editor-styles-wrapper .dbio_blocks .dbio_researchers_content p {
+    color: #fff !important;
+    font-style: normal; 
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.005em;
+    margin: 0px;
+	text-align: left; 
+} 
+.editor-styles-wrapper .ai__main_content.dbio_flex_aic {
+    display: flex;
+}
+
+@media only screen and (max-width:767px) {
+	section.twl_carousel_container {
+		 margin-top: 50px; 
+	}
+	p.dbio_rsai_title a{
+		display:block;  
+	}
+	.dev_ai_res_nav  {
+		display: none;
+	} 
+	p.dbio_rsai_title a {
+		display:block; 
+	}
+	.dbio_researchers_content p{
+		font-size: 15px;
+		line-height: 20px;
+	} 
+	article.ai_researcher_block.slick-slide{
+		padding:10px; 
+		margin-left:10px; 
+		margin-right:10px;
+	}
+	.dev_ai_res_blocks  .dbio-default-heading-block h2 {
+		font-size: 28px;
+		line-height:35px;
+		text-align: center;
+	} 
+	
+	p.dbio_rsai_title span {
+		display: none !important;
+	}
+	
+}

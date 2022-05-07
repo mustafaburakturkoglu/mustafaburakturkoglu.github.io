@@ -1,0 +1,102 @@
+.dbio_block_static_latest_posts_container {
+  background: linear-gradient(180deg, rgba(177, 133, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dbio_block_static_latest_posts .dbio_posts_grid {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 47px;
+}
+
+.dbio_block_static_latest_posts .dbio-default-heading-block.medium {
+  margin-bottom: 48px;
+}
+
+.dbio_block_static_latest_posts .img_container {
+  display: none;
+}
+
+.dbio_block_static_latest_posts .dbio-second-button-container {
+  text-align: right;
+}
+
+.dbio_block_static_latest_posts .dbio_blog_card:hover .dbio_author_desc {
+  width: 116px;
+}
+
+.dbio_block_static_latest_posts .dbio_author_box {
+  -ms-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.dbio_block_static_latest_posts .dbio_author_desc {
+  position: relative;
+  top: -5px;
+}
+
+.dbio_block_static_latest_posts .dbio_blogcard_excerpt {
+  margin-bottom: 32px;
+}
+
+.dbio_block_static_latest_posts a svg path {
+    stroke: #AA33FF;
+}
+
+.dbio_block_static_latest_posts a .hover {
+    display: none;
+}
+
+.dbio_block_static_latest_posts a .static {
+    display: inline;
+}
+
+.dbio_block_static_latest_posts a:hover .static {
+    display: none;
+}
+
+.dbio_block_static_latest_posts .dbio-second-button-container a:hover .hover {
+    display: inline;
+}
+
+
+.dbio_block_static_latest_posts .dbio-second-button-container a svg.static {
+    min-width: 15px;
+}
+
+@media only screen and (max-width:1299px) {
+  .dbio_block_static_latest_posts .dbio_posts_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dbio_block_static_latest_posts .dbio_blogcard_excerpt {
+    min-height: initial;
+  }
+
+  .dbio_block_static_latest_posts .dbio_blog_card:hover .dbio_author_desc {
+    width: initial;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .dbio_block_static_latest_posts .dbio-default-heading-block.medium {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .dbio_block_static_latest_posts .dbio_posts_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dbio_block_static_latest_posts .dbio_blog_card .dbio_blogcard_main_headline {
+    min-height: initial;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .dbio_block_static_latest_posts .dbio_blog_card .dbio_blogcard_cta {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+.ar_main_container {
+	margin: 0 auto;
+	text-align: center;
+}
+.dbio_icon, .dbio_text {
+    z-index: 1;
+}
+.dev_additional_resources .dbio-default-heading-block p {
+    font-size: 16px;
+    max-width: 850px;
+    margin: 0 auto;
+} 
+.ar_items:hover {
+    cursor:pointer;
+}
+.ar_items a {
+    color: black;
+}
+.ar_main_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dev_additional_resources {
+	background: linear-gradient(180deg, rgba(204, 133, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.dev_additional_resources {
+    width: 100vw;
+    position: relative;
+    display: block;    
+}
+section.additional_resources_container {
+    margin: 0px;
+    min-height: 100px;
+    margin-bottom: 75px;
+} 
+.ar_items {
+    float: left; 
+    width: 300px;
+    display: flex;
+    padding: 15px;
+    margin: 10px 10px;
+    align-items: center;
+	border-radius: 6px; 
+	position:relative;
+}
+.ar_items:hover .dbio_gradient_bg_cover {
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-color: transparent;  
+} 
+.ar_items:hover .dbio_lighter_gradient_bg_cover {   
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(102, 31, 153, 0.1) 0%, rgba(75, 31, 153, 0) 115.31%);
+} 
+section.additional_resources_container {
+    text-align: center;
+}
+
+.ar_items .dbio_icon {
+    margin-right: 10px;
+}  
+.ar_items .dbio_text {
+	text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    color: #000;
+}
+section.dev_additional_resources {
+    padding-top:100px; 
+    clear: both;
+}
+section.dev_additional_resources .dbio-default-heading-block {
+    padding: 0px 20px;
+	margin-bottom:35px;
+}
+.full-boxlink{
+	position: absolute;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}   
+ 
+@media only screen and (max-width:1350px) {
+	.ar_main_container {
+		display: inline-block;
+		max-width: 960px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width:1080px) {
+	.ar_main_container {
+ 		max-width:810px; 
+	}
+	.ar_items {
+		width: 250px;
+	}
+}
+@media only screen and (max-width:980px) {
+	.ar_main_container { 
+		max-width: 540px;
+	}
+}
+@media only screen and (max-width:767px) {
+	section.dev_additional_resources {
+		padding-top: 75px;
+	}	
+	.dev_additional_resources .dbio-default-heading-block h2 {
+		font-size: 34px !important; 
+	}
+}
+
+@media only screen and (max-width:650px) {
+	.ar_items {
+		float: none;
+	} 
+}
